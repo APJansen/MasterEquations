@@ -1,0 +1,694 @@
+{{{Subscript[h, tt] -> Function[{t, r}, Subscript[H, tt][t, r] - 
+      (k^2*SubMinus[h][t, r]*Derivative[1][f][r])/
+       (2*n*S[r]*Derivative[1][S][r]) - 
+      (SubPlus[h][t, r]*Derivative[1][f][r])/(2*n*S[r]*Derivative[1][S][r]) + 
+      2*Derivative[1, 0][Subscript[h, tx]][t, r] - 
+      Derivative[2, 0][SubMinus[h]][t, r]], Subscript[h, tr] -> 
+    Function[{t, r}, Subscript[H, tr][t, r] - 
+      (2*Subscript[h, tx][t, r]*Derivative[1][f][r])/f[r] + 
+      2*Derivative[0, 1][Subscript[h, tx]][t, r] + 
+      ((n*Derivative[1][f][r] + (k^2*\[Zeta][r]^2)/
+          (S[r]*Derivative[1][S][r]))*Derivative[1, 0][SubMinus[h]][t, r])/
+       (n*f[r]) + (\[Zeta][r]^2*Derivative[1, 0][SubPlus[h]][t, r])/
+       (n*f[r]*S[r]*Derivative[1][S][r]) - Derivative[1, 1][SubMinus[h]][t, 
+       r]], Subscript[h, rr] -> Function[{t, r}, Subscript[H, rr][t, r] - 
+      (\[Zeta][r]^2*SubPlus[h][t, r]*(n*S[r]*Derivative[1][f][r]*
+          Derivative[1][S][r] + 2*n*f[r]*Derivative[1][S][r]^2 - 
+         2*\[Eta]*f[r]*S[r]^2*Derivative[1][\[Phi]][r]^2))/
+       (2*n^2*f[r]^2*S[r]^2*Derivative[1][S][r]^2) + 
+      (k^2*\[Zeta][r]^2*SubMinus[h][t, r]*
+        (-(n*S[r]*Derivative[1][f][r]*Derivative[1][S][r]) - 
+         2*n*f[r]*Derivative[1][S][r]^2 + 2*\[Eta]*f[r]*S[r]^2*
+          Derivative[1][\[Phi]][r]^2))/(2*n^2*f[r]^2*S[r]^2*
+        Derivative[1][S][r]^2) + (k^2*\[Zeta][r]^2*
+        Derivative[0, 1][SubMinus[h]][t, r])/(n*f[r]*S[r]*
+        Derivative[1][S][r]) + (\[Zeta][r]^2*Derivative[0, 1][SubPlus[h]][t, 
+         r])/(n*f[r]*S[r]*Derivative[1][S][r])], 
+   Subscript[h, rx] -> Function[{t, r}, Subscript[H, rx][t, r] + 
+      (\[Zeta][r]^2*SubPlus[h][t, r])/(2*n*f[r]*S[r]*Derivative[1][S][r]) + 
+      (SubMinus[h][t, r]*((k^2*\[Zeta][r]^2)/f[r] - 
+         2*n*Derivative[1][S][r]^2))/(2*n*S[r]*Derivative[1][S][r]) + 
+      Derivative[0, 1][SubMinus[h]][t, r]/2], Subscript[\[Delta]a, tt] -> 
+    Function[{t, r}, Subscript[A, tt][t, r] + 
+      (k^2*SubMinus[h][t, r]*Derivative[1][a][r])/
+       (2*n*S[r]*Derivative[1][S][r]) + 
+      (SubPlus[h][t, r]*Derivative[1][a][r])/(2*n*S[r]*Derivative[1][S][r]) + 
+      Derivative[1, 0][Subscript[\[Delta]a, xx]][t, r]], 
+   Subscript[\[Delta]a, rr] -> Function[{t, r}, Subscript[A, rr][t, r] + 
+      (Subscript[h, tx][t, r]*Derivative[1][a][r])/f[r] + 
+      Derivative[0, 1][Subscript[\[Delta]a, xx]][t, r] - 
+      (Derivative[1][a][r]*Derivative[1, 0][SubMinus[h]][t, r])/(2*f[r])], 
+   \[Delta]\[Phi] -> Function[{t, r}, \[CapitalPhi]\[Phi][t, r] + 
+      (k^2*SubMinus[h][t, r]*Derivative[1][\[Phi]][r])/
+       (2*n*S[r]*Derivative[1][S][r]) + 
+      (SubPlus[h][t, r]*Derivative[1][\[Phi]][r])/
+       (2*n*S[r]*Derivative[1][S][r])], Subscript[h, tz] -> 
+    Function[{t, r}, Subscript[H, tz][t, r] + 
+      Derivative[1, 0][Subscript[h, xz]][t, r]], 
+   Subscript[h, rz] -> Function[{t, r}, Subscript[H, rz][t, r] - 
+      (2*Subscript[h, xz][t, r]*Derivative[1][S][r])/S[r] + 
+      Derivative[0, 1][Subscript[h, xz]][t, r]], Subscript[\[Delta]a, zz] -> 
+    Function[{t, r}, Subscript[A, zz][t, r]], Subscript[h, yz] -> 
+    Function[{t, r}, Subscript[H, yz][t, r]]}, 
+  {Subscript[h, tt] -> Function[{t, r}, Subscript[H, tt][t, r] - 
+      (k^2*SubMinus[h][t, r]*Derivative[1][f][r])/
+       (2*n*S[r]*Derivative[1][S][r]) - 
+      (SubPlus[h][t, r]*Derivative[1][f][r])/(2*n*S[r]*Derivative[1][S][r]) + 
+      2*Derivative[1, 0][Subscript[h, tx]][t, r] - 
+      Derivative[2, 0][SubMinus[h]][t, r]], Subscript[h, tr] -> 
+    Function[{t, r}, Subscript[H, tr][t, r] - 
+      (2*Subscript[h, tx][t, r]*Derivative[1][f][r])/f[r] + 
+      (k^2*\[Zeta][r]*SubMinus[h][t, r]*Derivative[1][f][r])/
+       (n*f[r]*S[r]*Derivative[1][S][r]) + 
+      (\[Zeta][r]*SubPlus[h][t, r]*Derivative[1][f][r])/
+       (n*f[r]*S[r]*Derivative[1][S][r]) + 
+      2*Derivative[0, 1][Subscript[h, tx]][t, r] + 
+      ((n*Derivative[1][f][r] + (k^2*\[Zeta][r]^2)/
+          (S[r]*Derivative[1][S][r]))*Derivative[1, 0][SubMinus[h]][t, r])/
+       (n*f[r]) + (\[Zeta][r]^2*Derivative[1, 0][SubPlus[h]][t, r])/
+       (n*f[r]*S[r]*Derivative[1][S][r]) - 
+      (2*\[Zeta][r]*Derivative[1, 0][Subscript[h, tx]][t, r])/f[r] - 
+      Derivative[1, 1][SubMinus[h]][t, r] + 
+      (\[Zeta][r]*Derivative[2, 0][SubMinus[h]][t, r])/f[r]], 
+   Subscript[h, rr] -> Function[{t, r}, Subscript[H, rr][t, r] + 
+      (2*\[Zeta][r]*Subscript[h, tx][t, r]*Derivative[1][f][r])/f[r]^2 - 
+      (\[Zeta][r]^2*SubPlus[h][t, r]*(n*S[r]*Derivative[1][f][r]*
+          Derivative[1][S][r] + n*f[r]*Derivative[1][S][r]^2 - 
+         \[Eta]*f[r]*S[r]^2*Derivative[1][\[Phi]][r]^2))/
+       (n^2*f[r]^2*S[r]^2*Derivative[1][S][r]^2) + 
+      (k^2*\[Zeta][r]^2*SubMinus[h][t, r]*
+        (-(n*S[r]*Derivative[1][f][r]*Derivative[1][S][r]) - 
+         n*f[r]*Derivative[1][S][r]^2 + \[Eta]*f[r]*S[r]^2*
+          Derivative[1][\[Phi]][r]^2))/(n^2*f[r]^2*S[r]^2*
+        Derivative[1][S][r]^2) + (k^2*\[Zeta][r]^2*
+        Derivative[0, 1][SubMinus[h]][t, r])/(n*f[r]*S[r]*
+        Derivative[1][S][r]) + (\[Zeta][r]^2*Derivative[0, 1][SubPlus[h]][t, 
+         r])/(n*f[r]*S[r]*Derivative[1][S][r]) - 
+      (2*\[Zeta][r]*Derivative[0, 1][Subscript[h, tx]][t, r])/f[r] - 
+      (\[Zeta][r]*Derivative[1][f][r]*Derivative[1, 0][SubMinus[h]][t, r])/
+       f[r]^2 + (\[Zeta][r]*Derivative[1, 1][SubMinus[h]][t, r])/f[r]], 
+   Subscript[h, rx] -> Function[{t, r}, 
+     -((\[Zeta][r]*Subscript[h, tx][t, r])/f[r]) + Subscript[H, rx][t, r] + 
+      (\[Zeta][r]^2*SubPlus[h][t, r])/(2*n*f[r]*S[r]*Derivative[1][S][r]) + 
+      (SubMinus[h][t, r]*((k^2*\[Zeta][r]^2)/f[r] - 
+         2*n*Derivative[1][S][r]^2))/(2*n*S[r]*Derivative[1][S][r]) + 
+      Derivative[0, 1][SubMinus[h]][t, r]/2 + 
+      (\[Zeta][r]*Derivative[1, 0][SubMinus[h]][t, r])/(2*f[r])], 
+   Subscript[\[Delta]a, tt] -> Function[{t, r}, Subscript[A, tt][t, r] + 
+      (k^2*SubMinus[h][t, r]*Derivative[1][a][r])/
+       (2*n*S[r]*Derivative[1][S][r]) + 
+      (SubPlus[h][t, r]*Derivative[1][a][r])/(2*n*S[r]*Derivative[1][S][r]) + 
+      Derivative[1, 0][Subscript[\[Delta]a, xx]][t, r]], 
+   Subscript[\[Delta]a, rr] -> Function[{t, r}, Subscript[A, rr][t, r] + 
+      (Subscript[h, tx][t, r]*Derivative[1][a][r])/f[r] - 
+      (k^2*\[Zeta][r]*SubMinus[h][t, r]*Derivative[1][a][r])/
+       (2*n*f[r]*S[r]*Derivative[1][S][r]) - 
+      (\[Zeta][r]*SubPlus[h][t, r]*Derivative[1][a][r])/
+       (2*n*f[r]*S[r]*Derivative[1][S][r]) + 
+      Derivative[0, 1][Subscript[\[Delta]a, xx]][t, r] - 
+      (Derivative[1][a][r]*Derivative[1, 0][SubMinus[h]][t, r])/(2*f[r])], 
+   \[Delta]\[Phi] -> Function[{t, r}, \[CapitalPhi]\[Phi][t, r] + 
+      (k^2*SubMinus[h][t, r]*Derivative[1][\[Phi]][r])/
+       (2*n*S[r]*Derivative[1][S][r]) + 
+      (SubPlus[h][t, r]*Derivative[1][\[Phi]][r])/
+       (2*n*S[r]*Derivative[1][S][r])], Subscript[h, tz] -> 
+    Function[{t, r}, Subscript[H, tz][t, r] + 
+      Derivative[1, 0][Subscript[h, xz]][t, r]], 
+   Subscript[h, rz] -> Function[{t, r}, Subscript[H, rz][t, r] - 
+      (2*Subscript[h, xz][t, r]*Derivative[1][S][r])/S[r] + 
+      Derivative[0, 1][Subscript[h, xz]][t, r]], Subscript[\[Delta]a, zz] -> 
+    Function[{t, r}, Subscript[A, zz][t, r]], Subscript[h, yz] -> 
+    Function[{t, r}, Subscript[H, yz][t, r]]}, 
+  {Subscript[h, tt] -> Function[{t, r}, Subscript[H, tt][t, r] - 
+      (f[r]*Subscript[h, rx][t, r]*Derivative[1][f][r])/\[Zeta][r]^2 - 
+      (f[r]*SubMinus[h][t, r]*Derivative[1][f][r]*Derivative[1][S][r])/
+       (S[r]*\[Zeta][r]^2) + (f[r]*Derivative[1][f][r]*
+        Derivative[0, 1][SubMinus[h]][t, r])/(2*\[Zeta][r]^2) + 
+      2*Derivative[1, 0][Subscript[h, tx]][t, r] - 
+      Derivative[2, 0][SubMinus[h]][t, r]], Subscript[h, tr] -> 
+    Function[{t, r}, Subscript[H, tr][t, r] - 
+      (2*Subscript[h, tx][t, r]*Derivative[1][f][r])/f[r] + 
+      2*Derivative[0, 1][Subscript[h, tx]][t, r] + 
+      (Derivative[1][f][r]/f[r] + (2*Derivative[1][S][r])/S[r])*
+       Derivative[1, 0][SubMinus[h]][t, r] + 
+      2*Derivative[1, 0][Subscript[h, rx]][t, r] - 
+      2*Derivative[1, 1][SubMinus[h]][t, r]], Subscript[h, rr] -> 
+    Function[{t, r}, Subscript[H, rr][t, r] + Subscript[h, rx][t, r]*
+       (Derivative[1][f][r]/f[r] - (2*Derivative[1][\[Zeta]][r])/
+         \[Zeta][r]) + SubMinus[h][t, r]*
+       ((Derivative[1][f][r]*Derivative[1][S][r])/(f[r]*S[r]) - 
+        (2*Derivative[1][S][r]^2)/S[r]^2 - 
+        (2*\[Eta]*Derivative[1][\[Phi]][r]^2)/n) + 
+      (-1/2*Derivative[1][f][r]/f[r] + (2*Derivative[1][S][r])/S[r] + 
+        Derivative[1][\[Zeta]][r]/\[Zeta][r])*Derivative[0, 1][SubMinus[h]][
+        t, r] + 2*Derivative[0, 1][Subscript[h, rx]][t, r] - 
+      Derivative[0, 2][SubMinus[h]][t, r]], 
+   SubPlus[h] -> Function[{t, r}, SubPlus[H][t, r] + 
+      (2*n*f[r]*S[r]*Subscript[h, rx][t, r]*Derivative[1][S][r])/
+       \[Zeta][r]^2 + SubMinus[h][t, r]*
+       (-k^2 + (2*n*f[r]*Derivative[1][S][r]^2)/\[Zeta][r]^2) - 
+      (n*f[r]*S[r]*Derivative[1][S][r]*Derivative[0, 1][SubMinus[h]][t, r])/
+       \[Zeta][r]^2], Subscript[\[Delta]a, tt] -> 
+    Function[{t, r}, Subscript[A, tt][t, r] + 
+      (f[r]*Subscript[h, rx][t, r]*Derivative[1][a][r])/\[Zeta][r]^2 + 
+      (f[r]*SubMinus[h][t, r]*Derivative[1][a][r]*Derivative[1][S][r])/
+       (S[r]*\[Zeta][r]^2) - (f[r]*Derivative[1][a][r]*
+        Derivative[0, 1][SubMinus[h]][t, r])/(2*\[Zeta][r]^2) + 
+      Derivative[1, 0][Subscript[\[Delta]a, xx]][t, r]], 
+   Subscript[\[Delta]a, rr] -> Function[{t, r}, Subscript[A, rr][t, r] + 
+      (Subscript[h, tx][t, r]*Derivative[1][a][r])/f[r] + 
+      Derivative[0, 1][Subscript[\[Delta]a, xx]][t, r] - 
+      (Derivative[1][a][r]*Derivative[1, 0][SubMinus[h]][t, r])/(2*f[r])], 
+   \[Delta]\[Phi] -> Function[{t, r}, \[CapitalPhi]\[Phi][t, r] + 
+      (f[r]*Subscript[h, rx][t, r]*Derivative[1][\[Phi]][r])/\[Zeta][r]^2 + 
+      (f[r]*SubMinus[h][t, r]*Derivative[1][S][r]*Derivative[1][\[Phi]][r])/
+       (S[r]*\[Zeta][r]^2) - (f[r]*Derivative[1][\[Phi]][r]*
+        Derivative[0, 1][SubMinus[h]][t, r])/(2*\[Zeta][r]^2)], 
+   Subscript[h, tz] -> Function[{t, r}, Subscript[H, tz][t, r] + 
+      Derivative[1, 0][Subscript[h, xz]][t, r]], 
+   Subscript[h, rz] -> Function[{t, r}, Subscript[H, rz][t, r] - 
+      (2*Subscript[h, xz][t, r]*Derivative[1][S][r])/S[r] + 
+      Derivative[0, 1][Subscript[h, xz]][t, r]], Subscript[\[Delta]a, zz] -> 
+    Function[{t, r}, Subscript[A, zz][t, r]], Subscript[h, yz] -> 
+    Function[{t, r}, Subscript[H, yz][t, r]]}, 
+  {Subscript[h, tt] -> Function[{t, r}, Subscript[H, tt][t, r] - 
+      (f[r]*Subscript[h, rx][t, r]*Derivative[1][f][r])/\[Zeta][r]^2 - 
+      (Subscript[h, tx][t, r]*Derivative[1][f][r])/\[Zeta][r] - 
+      (f[r]*SubMinus[h][t, r]*Derivative[1][f][r]*Derivative[1][S][r])/
+       (S[r]*\[Zeta][r]^2) + (f[r]*Derivative[1][f][r]*
+        Derivative[0, 1][SubMinus[h]][t, r])/(2*\[Zeta][r]^2) + 
+      (Derivative[1][f][r]*Derivative[1, 0][SubMinus[h]][t, r])/
+       (2*\[Zeta][r]) + 2*Derivative[1, 0][Subscript[h, tx]][t, r] - 
+      Derivative[2, 0][SubMinus[h]][t, r]], Subscript[h, tr] -> 
+    Function[{t, r}, Subscript[H, tr][t, r] + 
+      (2*Subscript[h, rx][t, r]*Derivative[1][f][r])/\[Zeta][r] + 
+      (2*SubMinus[h][t, r]*Derivative[1][f][r]*Derivative[1][S][r])/
+       (S[r]*\[Zeta][r]) - (Derivative[1][f][r]*Derivative[0, 1][SubMinus[h]][
+         t, r])/\[Zeta][r] + 2*Derivative[0, 1][Subscript[h, tx]][t, r] + 
+      (2*Derivative[1][S][r]*Derivative[1, 0][SubMinus[h]][t, r])/S[r] + 
+      2*Derivative[1, 0][Subscript[h, rx]][t, r] - 
+      2*Derivative[1, 1][SubMinus[h]][t, r]], Subscript[h, rr] -> 
+    Function[{t, r}, Subscript[H, rr][t, r] - 
+      (2*Subscript[h, rx][t, r]*Derivative[1][\[Zeta]][r])/\[Zeta][r] + 
+      SubMinus[h][t, r]*((-2*Derivative[1][S][r]^2)/S[r]^2 - 
+        (2*\[Eta]*Derivative[1][\[Phi]][r]^2)/n) + 
+      ((2*Derivative[1][S][r])/S[r] + Derivative[1][\[Zeta]][r]/\[Zeta][r])*
+       Derivative[0, 1][SubMinus[h]][t, r] + 
+      2*Derivative[0, 1][Subscript[h, rx]][t, r] - 
+      Derivative[0, 2][SubMinus[h]][t, r]], 
+   SubPlus[h] -> Function[{t, r}, SubPlus[H][t, r] + 
+      (2*n*f[r]*S[r]*Subscript[h, rx][t, r]*Derivative[1][S][r])/
+       \[Zeta][r]^2 + (2*n*S[r]*Subscript[h, tx][t, r]*Derivative[1][S][r])/
+       \[Zeta][r] + SubMinus[h][t, r]*(-k^2 + 
+        (2*n*f[r]*Derivative[1][S][r]^2)/\[Zeta][r]^2) - 
+      (n*f[r]*S[r]*Derivative[1][S][r]*Derivative[0, 1][SubMinus[h]][t, r])/
+       \[Zeta][r]^2 - (n*S[r]*Derivative[1][S][r]*
+        Derivative[1, 0][SubMinus[h]][t, r])/\[Zeta][r]], 
+   Subscript[\[Delta]a, tt] -> Function[{t, r}, Subscript[A, tt][t, r] + 
+      (f[r]*Subscript[h, rx][t, r]*Derivative[1][a][r])/\[Zeta][r]^2 + 
+      (Subscript[h, tx][t, r]*Derivative[1][a][r])/\[Zeta][r] + 
+      (f[r]*SubMinus[h][t, r]*Derivative[1][a][r]*Derivative[1][S][r])/
+       (S[r]*\[Zeta][r]^2) - (f[r]*Derivative[1][a][r]*
+        Derivative[0, 1][SubMinus[h]][t, r])/(2*\[Zeta][r]^2) - 
+      (Derivative[1][a][r]*Derivative[1, 0][SubMinus[h]][t, r])/
+       (2*\[Zeta][r]) + Derivative[1, 0][Subscript[\[Delta]a, xx]][t, r]], 
+   Subscript[\[Delta]a, rr] -> Function[{t, r}, Subscript[A, rr][t, r] - 
+      (Subscript[h, rx][t, r]*Derivative[1][a][r])/\[Zeta][r] - 
+      (SubMinus[h][t, r]*Derivative[1][a][r]*Derivative[1][S][r])/
+       (S[r]*\[Zeta][r]) + (Derivative[1][a][r]*Derivative[0, 1][SubMinus[h]][
+         t, r])/(2*\[Zeta][r]) + Derivative[0, 1][Subscript[\[Delta]a, xx]][
+       t, r]], \[Delta]\[Phi] -> Function[{t, r}, \[CapitalPhi]\[Phi][t, r] + 
+      (f[r]*Subscript[h, rx][t, r]*Derivative[1][\[Phi]][r])/\[Zeta][r]^2 + 
+      (Subscript[h, tx][t, r]*Derivative[1][\[Phi]][r])/\[Zeta][r] + 
+      (f[r]*SubMinus[h][t, r]*Derivative[1][S][r]*Derivative[1][\[Phi]][r])/
+       (S[r]*\[Zeta][r]^2) - (f[r]*Derivative[1][\[Phi]][r]*
+        Derivative[0, 1][SubMinus[h]][t, r])/(2*\[Zeta][r]^2) - 
+      (Derivative[1][\[Phi]][r]*Derivative[1, 0][SubMinus[h]][t, r])/
+       (2*\[Zeta][r])], Subscript[h, tz] -> Function[{t, r}, 
+     Subscript[H, tz][t, r] + Derivative[1, 0][Subscript[h, xz]][t, r]], 
+   Subscript[h, rz] -> Function[{t, r}, Subscript[H, rz][t, r] - 
+      (2*Subscript[h, xz][t, r]*Derivative[1][S][r])/S[r] + 
+      Derivative[0, 1][Subscript[h, xz]][t, r]], Subscript[\[Delta]a, zz] -> 
+    Function[{t, r}, Subscript[A, zz][t, r]], Subscript[h, yz] -> 
+    Function[{t, r}, Subscript[H, yz][t, r]]}}, 
+ {Subscript[H, yz] -> Function[{t, r}, S[r]^2*Subscript[C[\[Alpha]H], TT, 1, 
+      0, 0]*Subscript[\[CapitalPhi], 2, 2][t, r]], 
+  Subscript[H, tz] -> Function[{t, r}, Subscript[C[\[Alpha]H], a, vv, 1, 0, 
+      1]*((n*f[r]*S[r]*Subscript[\[CapitalPhi], 2, 1][t, r]*
+        Derivative[1][S][r])/\[Zeta][r] + 
+      (f[r]*S[r]^2*Derivative[0, 1][Subscript[\[CapitalPhi], 2, 1]][t, r])/
+       \[Zeta][r])], Subscript[H, rz] -> Function[{t, r}, 
+    (S[r]^2*Subscript[C[\[Alpha]H], a, vv, 1, 0, 1]*\[Zeta][r]*
+      Derivative[1, 0][Subscript[\[CapitalPhi], 2, 1]][t, r])/f[r]], 
+  Subscript[A, zz] -> Function[{t, r}, 
+    (Sqrt[k^2 - K*n]*S[r]*Subscript[C[\[Alpha]H], a, vv, 1, 0, 1]*
+      Subscript[\[CapitalPhi], 1, 1][t, r])/Sqrt[Z[\[Phi][r]]]], 
+  \[CapitalPhi]\[Phi] -> Function[{t, r}, 
+    -((k*Sqrt[-1 + n]*Sqrt[k^2 - K*n]*Subscript[C[\[Alpha]H], p, vv, 2, 0, 1]*
+        Subscript[\[CapitalPhi], 0, 0][t, r])/(Sqrt[n]*Sqrt[\[Eta]])) + 
+     (k^2*S[r]*Subscript[C[\[Alpha]H], p, vv, 2, 0, 1]*
+       Subscript[\[CapitalPhi], 2, 0][t, r]*Derivative[1][\[Phi]][r])/
+      (n*Derivative[1][S][r])], Subscript[A, tt] -> 
+   Function[{t, r}, (S[r]*Subscript[C[\[Alpha]H], p, vv, 2, 0, 1]*
+       Subscript[\[CapitalPhi], 2, 0][t, r]*Derivative[1][a][r]*
+       (2*k^4*\[Zeta][r]^2 + n*Derivative[1][S][r]*
+         (k^2*S[r]*Derivative[1][f][r] + 2*(k^2*(-2 + n) - K*(-1 + n)*n)*f[r]*
+           Derivative[1][S][r])))/(n*\[ScriptCapitalD][r]*
+       Derivative[1][S][r]) + (2*k*Sqrt[-1 + n]*Sqrt[k^2 - K*n]*Sqrt[\[Eta]]*
+       f[r]*S[r]^2*Subscript[C[\[Alpha]H], p, vv, 2, 0, 1]*
+       Subscript[\[CapitalPhi], 0, 0][t, r]*Derivative[1][a][r]*
+       Derivative[1][\[Phi]][r])/(Sqrt[n]*\[ScriptCapitalD][r]) - 
+     (Sqrt[2]*Sqrt[-1 + n]*Sqrt[k^2 - K*n]*Subscript[C[\[Alpha]H], p, vv, 2, 
+        0, 1]*((f[r]*S[r]*Subscript[\[CapitalPhi], 1, 0][t, r]*
+          (((-1 + n)*Derivative[1][S][r])/S[r] + (n*S[r]*Z[\[Phi][r]]*
+             Derivative[1][a][r]^2*Derivative[1][S][r])/\[ScriptCapitalD][
+             r] + (Derivative[1][Z][\[Phi][r]]*Derivative[1][\[Phi]][r])/
+            (2*Z[\[Phi][r]])))/(Sqrt[Z[\[Phi][r]]]*\[Zeta][r]) + 
+        (f[r]*S[r]*Derivative[0, 1][Subscript[\[CapitalPhi], 1, 0]][t, r])/
+         (Sqrt[Z[\[Phi][r]]]*\[Zeta][r])))/Sqrt[n]], 
+  Subscript[A, rr] -> Function[{t, r}, 
+    -((Sqrt[2]*Sqrt[-1 + n]*Sqrt[k^2 - K*n]*S[r]*Subscript[C[\[Alpha]H], p, 
+         vv, 2, 0, 1]*\[Zeta][r]*Derivative[1, 0][Subscript[\[CapitalPhi], 1, 
+           0]][t, r])/(Sqrt[n]*f[r]*Sqrt[Z[\[Phi][r]]])) - 
+     (S[r]^2*Subscript[C[\[Alpha]H], p, vv, 2, 0, 1]*Derivative[1][a][r]*
+       Derivative[1, 0][Subscript[\[CapitalPhi], 2, 0]][t, r])/f[r]], 
+  Subscript[H, rr] -> Function[{t, r}, 
+    (-2*Sqrt[2]*k^2*Sqrt[-1 + n]*Sqrt[k^2 - K*n]*S[r]*Subscript[C[\[Alpha]H], 
+        p, vv, 2, 0, 1]*Sqrt[Z[\[Phi][r]]]*\[Zeta][r]^3*
+       Subscript[\[CapitalPhi], 1, 0][t, r]*Derivative[1][a][r])/
+      (Sqrt[n]*f[r]*\[ScriptCapitalD][r]) - 
+     (2*k*Sqrt[-1 + n]*Sqrt[k^2 - K*n]*Sqrt[\[Eta]]*S[r]*
+       Subscript[C[\[Alpha]H], p, vv, 2, 0, 1]*\[Zeta][r]^2*
+       Subscript[\[CapitalPhi], 0, 0][t, r]*(S[r]*Derivative[1][f][r] - 
+        2*f[r]*Derivative[1][S][r])*Derivative[1][\[Phi]][r])/
+      (Sqrt[n]*f[r]*\[ScriptCapitalD][r]) + 
+     Subscript[C[\[Alpha]H], p, vv, 2, 0, 1]*
+      ((k^2*\[Zeta][r]^2*Subscript[\[CapitalPhi], 2, 0][t, r]*
+         (4*n^2*f[r]*Derivative[1][S][r]^2*((k^2 + K - K*n)*\[Zeta][r]^2 - 
+            f[r]*Derivative[1][S][r]^2) + 2*n*S[r]*Derivative[1][f][r]*
+           Derivative[1][S][r]*(-(k^2*\[Zeta][r]^2) + 
+            2*n*f[r]*Derivative[1][S][r]^2) + 2*n*\[Eta]*f[r]*S[r]^3*
+           Derivative[1][f][r]*Derivative[1][S][r]*Derivative[1][\[Phi]][r]^
+            2 - S[r]^2*(n^2*Derivative[1][f][r]^2*Derivative[1][S][r]^2 + 
+            4*\[Eta]*f[r]*(-(k^2*\[Zeta][r]^2) + n*f[r]*Derivative[1][S][r]^
+                2)*Derivative[1][\[Phi]][r]^2)))/(n^2*f[r]^2*
+         \[ScriptCapitalD][r]*Derivative[1][S][r]^2) + 
+       (2*k^2*S[r]*\[Zeta][r]^2*Derivative[0, 1][Subscript[\[CapitalPhi], 2, 
+            0]][t, r])/(n*f[r]*Derivative[1][S][r]))], 
+  Subscript[H, rx] -> Function[{t, r}, 
+    -((Sqrt[2]*Sqrt[-1 + n]*Sqrt[n]*Sqrt[k^2 - K*n]*S[r]^2*
+        Subscript[C[\[Alpha]H], p, vv, 2, 0, 1]*Sqrt[Z[\[Phi][r]]]*\[Zeta][r]*
+        Subscript[\[CapitalPhi], 1, 0][t, r]*Derivative[1][a][r]*
+        Derivative[1][S][r])/\[ScriptCapitalD][r]) + 
+     (2*k*Sqrt[-1 + n]*Sqrt[k^2 - K*n]*Sqrt[\[Eta]]*S[r]^2*
+       Subscript[C[\[Alpha]H], p, vv, 2, 0, 1]*\[Zeta][r]^2*
+       Subscript[\[CapitalPhi], 0, 0][t, r]*Derivative[1][\[Phi]][r])/
+      (Sqrt[n]*\[ScriptCapitalD][r]) + Subscript[C[\[Alpha]H], p, vv, 2, 0, 
+       1]*((S[r]*\[Zeta][r]^2*Subscript[\[CapitalPhi], 2, 0][t, r]*
+         (2*k^4*\[Zeta][r]^2 + n*Derivative[1][S][r]*
+           (k^2*S[r]*Derivative[1][f][r] + 2*(k^2*(-2 + n) - K*(-1 + n)*n)*
+             f[r]*Derivative[1][S][r])))/(n*f[r]*\[ScriptCapitalD][r]*
+         Derivative[1][S][r]) + S[r]^2*Derivative[0, 1][
+          Subscript[\[CapitalPhi], 2, 0]][t, r])], 
+  Subscript[H, tt] -> Function[{t, r}, 
+    -((k*Sqrt[-1 + n]*Sqrt[k^2 - K*n]*Subscript[C[\[Alpha]H], p, vv, 2, 0, 1]*
+        (-((f[r]*S[r]*Subscript[\[CapitalPhi], 0, 0][t, r]*
+            (8*\[Eta]*f[r]*Derivative[1][S][r]*((k^2 - K*(-1 + n)*n)*
+                \[Zeta][r]^2 + (-2 + n)*n*f[r]*Derivative[1][S][r]^2)*
+              Derivative[1][\[Phi]][r] - 4*\[Eta]^2*f[r]*S[r]^3*
+              Derivative[1][f][r]*Derivative[1][\[Phi]][r]^3 + 
+             S[r]*(-4*k^2*\[Zeta][r]^4*Derivative[1][V][\[Phi][r]] + 
+               \[ScriptCapitalD][r]*Derivative[1][a][r]^2*Derivative[1][Z][
+                 \[Phi][r]] - 4*(-3 + n)*n*\[Eta]*f[r]*Derivative[1][f][r]*
+                Derivative[1][S][r]^2*Derivative[1][\[Phi]][r] + 4*
+                \[Zeta][r]^2*(n*f[r]*Derivative[1][S][r]^2*Derivative[1][V][
+                   \[Phi][r]] - k^2*\[Eta]*Derivative[1][f][r]*
+                  Derivative[1][\[Phi]][r])) - 2*S[r]^2*Derivative[1][S][r]*
+              (n*\[Zeta][r]^2*Derivative[1][f][r]*Derivative[1][V][
+                 \[Phi][r]] + \[Eta]*Derivative[1][\[Phi]][r]*
+                (-2*n*f[r]*Z[\[Phi][r]]*Derivative[1][a][r]^2 + 
+                 n*Derivative[1][f][r]^2 - 4*\[Eta]*f[r]^2*
+                  Derivative[1][\[Phi]][r]^2))))/\[ScriptCapitalD][r]^2) + 
+         (4*\[Eta]*f[r]^2*S[r]^2*Derivative[1][\[Phi]][r]*
+           Derivative[0, 1][Subscript[\[CapitalPhi], 0, 0]][t, r])/
+          \[ScriptCapitalD][r]))/(Sqrt[n]*Sqrt[\[Eta]])) - 
+     (Sqrt[2]*Sqrt[-1 + n]*Sqrt[k^2 - K*n]*Subscript[C[\[Alpha]H], p, vv, 2, 
+        0, 1]*(-((f[r]*S[r]*Subscript[\[CapitalPhi], 1, 0][t, r]*
+           Derivative[1][a][r]*(-2*n^2*f[r]*S[r]^2*Z[\[Phi][r]]^2*
+             Derivative[1][a][r]^2*Derivative[1][S][r]^2 + 
+            n*f[r]*S[r]*Derivative[1][S][r]*(-2*k^2*\[Zeta][r]^2 + 
+              n*Derivative[1][S][r]*(-(S[r]*Derivative[1][f][r]) + 
+                2*f[r]*Derivative[1][S][r]))*Derivative[1][Z][\[Phi][r]]*
+             Derivative[1][\[Phi]][r] + 2*Z[\[Phi][r]]*(-2*k^4*\[Zeta][r]^4 + 
+              n^2*Derivative[1][S][r]^2*(S[r]*Derivative[1][f][r] - 
+                2*f[r]*Derivative[1][S][r])*(S[r]*Derivative[1][f][r] + 
+                (-1 + n)*f[r]*Derivative[1][S][r]) + \[Zeta][r]^2*(
+                k^2*n*S[r]*Derivative[1][f][r]*Derivative[1][S][r] + 
+                2*n*(k^2 + K*(-1 + n)*n)*f[r]*Derivative[1][S][r]^2 - 
+                2*k^2*\[Eta]*f[r]*S[r]^2*Derivative[1][\[Phi]][r]^2))))/
+          (Sqrt[Z[\[Phi][r]]]*\[ScriptCapitalD][r]^2*\[Zeta][r])) - 
+        (2*n*f[r]^2*S[r]^2*Sqrt[Z[\[Phi][r]]]*Derivative[1][a][r]*
+          Derivative[1][S][r]*Derivative[0, 1][Subscript[\[CapitalPhi], 1, 
+             0]][t, r])/(\[ScriptCapitalD][r]*\[Zeta][r])))/Sqrt[n] + 
+     Subscript[C[\[Alpha]H], p, vv, 2, 0, 1]*
+      ((Subscript[\[CapitalPhi], 2, 0][t, r]*(-4*n*S[r]*Derivative[1][f][r]*
+           Derivative[1][S][r]*(k^6*\[Zeta][r]^4 + k^2*n*(-(K*(-1 + n)*n) + 
+              k^2*(-7 + 3*n))*f[r]*\[Zeta][r]^2*Derivative[1][S][r]^2 + 
+            n^2*(-2*K*n*(2 - 3*n + n^2) + k^2*(9 - 8*n + 2*n^2))*f[r]^2*
+             Derivative[1][S][r]^4) + 8*n*f[r]*Derivative[1][S][r]^2*
+           (k^4*(k^2 - K*(-1 + n)*n)*\[Zeta][r]^4 + 
+            n*(k^2*K*(-1 + n)*n + K^2*(-1 + n)^2*n^2 - k^4*(4 - 3*n + n^2))*
+             f[r]*\[Zeta][r]^2*Derivative[1][S][r]^2 + 
+            n^2*(-2*K*(-1 + n)^2*n + k^2*(4 - 5*n + 2*n^2))*f[r]^2*
+             Derivative[1][S][r]^4) + 4*k^2*n*\[Eta]^2*f[r]^2*S[r]^5*
+           Derivative[1][f][r]*Derivative[1][S][r]*Derivative[1][\[Phi]][r]^
+            4 + 2*k^2*f[r]*S[r]^4*Derivative[1][\[Phi]][r]*
+           (2*\[Eta]*Derivative[1][\[Phi]][r]*(n^2*Derivative[1][f][r]^2*
+               Derivative[1][S][r]^2 - 2*\[Eta]*f[r]*(\[ScriptCapitalD][r] + 
+                n*f[r]*Derivative[1][S][r]^2)*Derivative[1][\[Phi]][r]^2) + 
+            \[Zeta][r]^2*(n^2*Derivative[1][f][r]*Derivative[1][S][r]^2*
+               Derivative[1][V][\[Phi][r]] + 4*k^2*\[Eta]^2*f[r]*
+               Derivative[1][\[Phi]][r]^3)) - 2*n*S[r]^2*Derivative[1][S][r]^
+            2*(2*k^2*\[Zeta][r]^2*(k^2*n*Derivative[1][f][r]^2 + 
+              2*(-1 + n)*(-2*k^2 + K*n)*\[Eta]*f[r]^2*Derivative[1][\[Phi]][
+                 r]^2) + f[r]*(n^2*(3*k^2*(-2 + n) - 2*K*(-1 + n)*n)*
+               Derivative[1][f][r]^2*Derivative[1][S][r]^2 + 
+              4*k^2*(-1 + n)*n*\[Eta]*f[r]^2*Derivative[1][S][r]^2*
+               Derivative[1][\[Phi]][r]^2 - 2*f[r]*((-1 + n)*n^2*(k^2 - K*n)*
+                 Z[\[Phi][r]]*Derivative[1][a][r]^2*Derivative[1][S][r]^2 + 
+                k^2*\[Eta]*\[ScriptCapitalD][r]*Derivative[1][\[Phi]][r]^
+                  2))) + k^2*n*S[r]^3*(-(n^2*Derivative[1][f][r]^3*
+              Derivative[1][S][r]^3) + 4*\[Eta]*f[r]*Derivative[1][f][r]*
+             Derivative[1][S][r]*(2*k^2*\[Zeta][r]^2 + (-3 + n)*n*f[r]*
+               Derivative[1][S][r]^2)*Derivative[1][\[Phi]][r]^2 + 
+            f[r]*Derivative[1][\[Phi]][r]*(4*\[Zeta][r]^2*Derivative[1][S][
+                r]*(k^2*\[Zeta][r]^2 - n*f[r]*Derivative[1][S][r]^2)*
+               Derivative[1][V][\[Phi][r]] + \[ScriptCapitalD][r]*(
+                -4*\[Zeta][r]^2*Derivative[1][S][r]*Derivative[1][V][
+                  \[Phi][r]] + Derivative[1][a][r]^2*Derivative[1][S][r]*
+                 Derivative[1][Z][\[Phi][r]] + 4*\[Eta]*f[r]*
+                 (-(Derivative[1][\[Phi]][r]*Derivative[2][S][r]) + 
+                  Derivative[1][S][r]*Derivative[2][\[Phi]][r]))))))/
+        (n^2*\[ScriptCapitalD][r]^2*Derivative[1][S][r]^2) - 
+       (2*f[r]*S[r]*(-2*f[r]*\[Zeta][r]*Derivative[1][S][r]*
+           ((k^2*(1 - 2*n) + K*(-1 + n)*n)*\[Zeta][r]^2 + 
+            n^2*f[r]*Derivative[1][S][r]^2) + n*S[r]^2*Derivative[1][f][r]*
+           Derivative[1][S][r]*(\[Zeta][r]*Derivative[1][f][r] - 
+            f[r]*Derivative[1][\[Zeta]][r]) + 
+          S[r]*(2*k^2*\[Zeta][r]^3*Derivative[1][f][r] + (-2 + n)*n*f[r]*
+             \[Zeta][r]*Derivative[1][f][r]*Derivative[1][S][r]^2 - 
+            2*k^2*f[r]*\[Zeta][r]^2*Derivative[1][\[Zeta]][r] + 
+            2*n*f[r]^2*Derivative[1][S][r]^2*Derivative[1][\[Zeta]][r]))*
+         Derivative[0, 1][Subscript[\[CapitalPhi], 2, 0]][t, r])/
+        (\[ScriptCapitalD][r]*\[Zeta][r]^3) - 
+       (2*f[r]^2*S[r]^2*Derivative[0, 2][Subscript[\[CapitalPhi], 2, 0]][t, 
+          r])/\[Zeta][r]^2)], Subscript[H, tr] -> 
+   Function[{t, r}, (4*\[Eta]*S[r]^2*Derivative[1][\[Phi]][r]*
+       Derivative[1, 0][\[CapitalPhi]\[Phi]][t, r])/k^2 - 
+     (2*n*f[r]*S[r]*Derivative[1][S][r]*Derivative[1, 0][Subscript[H, rr]][t, 
+        r])/(k^2*\[Zeta][r]^2) + 2*Derivative[1, 0][Subscript[H, rx]][t, r]], 
+  \[ScriptCapitalD] -> Function[{r}, 2*k^2*\[Zeta][r]^2 + 
+     n*(S[r]*Derivative[1][f][r]*Derivative[1][S][r] - 
+       2*f[r]*Derivative[1][S][r]^2)]}, 
+ {{{Subscript[HEF, rr][t, r] -> Subscript[HFG, rr][t, r] - 
+      (\[Zeta][r]*Subscript[HFG, tr][t, r])/f[r] + 
+      (\[Zeta][r]^2*Subscript[HFG, tt][t, r])/f[r]^2, 
+    Subscript[HEF, tr][t, r] -> Subscript[HFG, tr][t, r] - 
+      (2*\[Zeta][r]*Subscript[HFG, tt][t, r])/f[r], 
+    Subscript[HEF, rz][t, r] -> Subscript[HFG, rz][t, r] - 
+      (\[Zeta][r]*Subscript[HFG, tz][t, r])/f[r], Subscript[AEF, rr][t, r] -> 
+     Subscript[AFG, rr][t, r] - (\[Zeta][r]*Subscript[AFG, tt][t, r])/f[r], 
+    Subscript[HEF, rx][t, r] -> Subscript[HFG, rx][t, r], 
+    Subscript[HEF, tt][t, r] -> Subscript[HFG, tt][t, r], 
+    Subscript[HEF, tz][t, r] -> Subscript[HFG, tz][t, r], 
+    Subscript[AEF, tt][t, r] -> Subscript[AFG, tt][t, r], 
+    Subscript[AEF, zz][t, r] -> Subscript[AFG, zz][t, r], 
+    Subscript[HEF, yz][t, r] -> Subscript[HFG, yz][t, r], 
+    \[CapitalPhi]\[Phi]EF[t, r] -> \[CapitalPhi]\[Phi]FG[t, r]}, 
+   Derivative[dt_, dr_][g_][t_, r_] /; dr > 0 :> 
+    Nest[D[#1, r] + (\[Zeta][r]*D[#1, t])/f[r] & , Derivative[dt, 0][g][t, 
+      r], dr]}, {{Subscript[HRW, tt][t, r] -> Subscript[HEZ, tt][t, r] + 
+      (f[r]*Subscript[HEZ, rx][t, r]*Derivative[1][f][r])/\[Zeta][r]^2, 
+    Subscript[HRW, tr][t, r] -> Subscript[HEZ, tr][t, r] - 
+      2*Derivative[1, 0][Subscript[HEZ, rx]][t, r], 
+    Subscript[HRW, rr][t, r] -> Subscript[HEZ, rr][t, r] + 
+      Subscript[HEZ, rx][t, r]*(-(Derivative[1][f][r]/f[r]) + 
+        (2*Derivative[1][\[Zeta]][r])/\[Zeta][r]) - 
+      2*Derivative[0, 1][Subscript[HEZ, rx]][t, r], 
+    SubPlus[HRW][t, r] -> (-2*n*f[r]*S[r]*Subscript[HEZ, rx][t, r]*
+       Derivative[1][S][r])/\[Zeta][r]^2, Subscript[HRW, rx][t, r] -> 0, 
+    Subscript[ARW, tt][t, r] -> Subscript[AEZ, tt][t, r] - 
+      (f[r]*Subscript[HEZ, rx][t, r]*Derivative[1][a][r])/\[Zeta][r]^2, 
+    \[CapitalPhi]\[Phi]RW[t, r] -> \[CapitalPhi]\[Phi]EZ[t, r] - 
+      (f[r]*Subscript[HEZ, rx][t, r]*Derivative[1][\[Phi]][r])/\[Zeta][r]^2}, 
+   {Subscript[HRW, tt][t, r] -> Subscript[HEZ, tt][t, r] + 
+      (f[r]*Subscript[HEZ, rx][t, r]*Derivative[1][f][r])/\[Zeta][r]^2, 
+    Subscript[HRW, tr][t, r] -> Subscript[HEZ, tr][t, r] - 
+      (2*Subscript[HEZ, rx][t, r]*Derivative[1][f][r])/\[Zeta][r] - 
+      2*Derivative[1, 0][Subscript[HEZ, rx]][t, r], 
+    Subscript[HRW, rr][t, r] -> Subscript[HEZ, rr][t, r] + 
+      (2*Subscript[HEZ, rx][t, r]*Derivative[1][\[Zeta]][r])/\[Zeta][r] - 
+      2*Derivative[0, 1][Subscript[HEZ, rx]][t, r], 
+    SubPlus[HRW][t, r] -> (-2*n*f[r]*S[r]*Subscript[HEZ, rx][t, r]*
+       Derivative[1][S][r])/\[Zeta][r]^2, Subscript[HRW, rx][t, r] -> 0, 
+    Subscript[ARW, tt][t, r] -> Subscript[AEZ, tt][t, r] - 
+      (f[r]*Subscript[HEZ, rx][t, r]*Derivative[1][a][r])/\[Zeta][r]^2, 
+    Subscript[ARW, rr][t, r] -> Subscript[AEZ, rr][t, r] + 
+      (Subscript[HEZ, rx][t, r]*Derivative[1][a][r])/\[Zeta][r], 
+    Subscript[ARW, xx][t, r] -> 0, \[CapitalPhi]\[Phi]RW[t, r] -> 
+     \[CapitalPhi]\[Phi]EZ[t, r] - (f[r]*Subscript[HEZ, rx][t, r]*
+        Derivative[1][\[Phi]][r])/\[Zeta][r]^2}}}, 
+ {Derivative[0, 2][Subscript[\[CapitalPhi], 0, 0]][t, r] -> 
+   (\[Zeta][r]^2*Subscript[W, 0, 0][r]*Subscript[\[CapitalPhi], 0, 0][t, r])/
+     f[r] + (\[Zeta][r]^2*Subscript[W, 0 -> 1, 0][r]*
+      Subscript[\[CapitalPhi], 1, 0][t, r])/f[r] + 
+    (\[Zeta][r]^2*Subscript[W, 0 -> 2, 0][r]*Subscript[\[CapitalPhi], 2, 0][
+       t, r])/f[r] + (-(Derivative[1][f][r]/f[r]) - (n*Derivative[1][S][r])/
+       S[r] + Derivative[1][\[Zeta]][r]/\[Zeta][r])*
+     Derivative[0, 1][Subscript[\[CapitalPhi], 0, 0]][t, r] + 
+    (\[Zeta][r]^2*Derivative[2, 0][Subscript[\[CapitalPhi], 0, 0]][t, r])/
+     f[r]^2, Derivative[0, 2][Subscript[\[CapitalPhi], 1, 0]][t, r] -> 
+   (\[Zeta][r]^2*Subscript[W, 1 -> 0, 0][r]*Subscript[\[CapitalPhi], 0, 0][t, 
+       r])/f[r] + (\[Zeta][r]^2*Subscript[W, 1, 0][r]*
+      Subscript[\[CapitalPhi], 1, 0][t, r])/f[r] + 
+    (\[Zeta][r]^2*Subscript[W, 1 -> 2, 0][r]*Subscript[\[CapitalPhi], 2, 0][
+       t, r])/f[r] + (-(Derivative[1][f][r]/f[r]) - (n*Derivative[1][S][r])/
+       S[r] + Derivative[1][\[Zeta]][r]/\[Zeta][r])*
+     Derivative[0, 1][Subscript[\[CapitalPhi], 1, 0]][t, r] + 
+    (\[Zeta][r]^2*Derivative[2, 0][Subscript[\[CapitalPhi], 1, 0]][t, r])/
+     f[r]^2, Derivative[0, 2][Subscript[\[CapitalPhi], 2, 0]][t, r] -> 
+   (\[Zeta][r]^2*Subscript[W, 2 -> 0, 0][r]*Subscript[\[CapitalPhi], 0, 0][t, 
+       r])/f[r] + (\[Zeta][r]^2*Subscript[W, 2 -> 1, 0][r]*
+      Subscript[\[CapitalPhi], 1, 0][t, r])/f[r] + 
+    (\[Zeta][r]^2*Subscript[W, 2, 0][r]*Subscript[\[CapitalPhi], 2, 0][t, r])/
+     f[r] + (-(Derivative[1][f][r]/f[r]) - (n*Derivative[1][S][r])/S[r] + 
+      Derivative[1][\[Zeta]][r]/\[Zeta][r])*
+     Derivative[0, 1][Subscript[\[CapitalPhi], 2, 0]][t, r] + 
+    (\[Zeta][r]^2*Derivative[2, 0][Subscript[\[CapitalPhi], 2, 0]][t, r])/
+     f[r]^2, Derivative[0, 2][Subscript[\[CapitalPhi], 1, 1]][t, r] -> 
+   (\[Zeta][r]^2*Subscript[W, 1, 1][r]*Subscript[\[CapitalPhi], 1, 1][t, r])/
+     f[r] + (\[Zeta][r]^2*Subscript[W, 1 -> 2, 1][r]*
+      Subscript[\[CapitalPhi], 2, 1][t, r])/f[r] + 
+    (-(Derivative[1][f][r]/f[r]) - (n*Derivative[1][S][r])/S[r] + 
+      Derivative[1][\[Zeta]][r]/\[Zeta][r])*
+     Derivative[0, 1][Subscript[\[CapitalPhi], 1, 1]][t, r] + 
+    (\[Zeta][r]^2*Derivative[2, 0][Subscript[\[CapitalPhi], 1, 1]][t, r])/
+     f[r]^2, Derivative[0, 2][Subscript[\[CapitalPhi], 2, 1]][t, r] -> 
+   (\[Zeta][r]^2*Subscript[W, 2 -> 1, 1][r]*Subscript[\[CapitalPhi], 1, 1][t, 
+       r])/f[r] + (\[Zeta][r]^2*Subscript[W, 2, 1][r]*
+      Subscript[\[CapitalPhi], 2, 1][t, r])/f[r] + 
+    (-(Derivative[1][f][r]/f[r]) - (n*Derivative[1][S][r])/S[r] + 
+      Derivative[1][\[Zeta]][r]/\[Zeta][r])*
+     Derivative[0, 1][Subscript[\[CapitalPhi], 2, 1]][t, r] + 
+    (\[Zeta][r]^2*Derivative[2, 0][Subscript[\[CapitalPhi], 2, 1]][t, r])/
+     f[r]^2, Derivative[0, 2][Subscript[\[CapitalPhi], 2, 2]][t, r] -> 
+   (\[Zeta][r]^2*Subscript[W, 2, 2][r]*Subscript[\[CapitalPhi], 2, 2][t, r])/
+     f[r] + (-(Derivative[1][f][r]/f[r]) - (n*Derivative[1][S][r])/S[r] + 
+      Derivative[1][\[Zeta]][r]/\[Zeta][r])*
+     Derivative[0, 1][Subscript[\[CapitalPhi], 2, 2]][t, r] + 
+    (\[Zeta][r]^2*Derivative[2, 0][Subscript[\[CapitalPhi], 2, 2]][t, r])/
+     f[r]^2}, {Subscript[W, 2, 2] -> Function[{r}, k^2/S[r]^2], 
+  Subscript[W, 1, 1] -> Function[{r}, k^2/S[r]^2 + 
+     (Z[\[Phi][r]]*Derivative[1][a][r]^2)/\[Zeta][r]^2 - 
+     (Derivative[1][f][r]*Derivative[1][S][r])/(S[r]*\[Zeta][r]^2) + 
+     (-2 + n)*(K/S[r]^2 - (f[r]*Derivative[1][S][r]^2)/
+        (S[r]^2*\[Zeta][r]^2)) + (\[Eta]*f[r]*Derivative[1][\[Phi]][r]^2)/
+      (n*\[Zeta][r]^2) + (Derivative[1][Z][\[Phi][r]]*
+       (Derivative[1][V][\[Phi][r]]/(4*\[Eta]) - 
+        (f[r]*Derivative[1][S][r]*Derivative[1][\[Phi]][r])/
+         (S[r]*\[Zeta][r]^2)))/Z[\[Phi][r]] + 
+     (Derivative[1][Z][\[Phi][r]]^2*
+       (-1/8*(Z[\[Phi][r]]*Derivative[1][a][r]^2)/(\[Eta]*\[Zeta][r]^2) - 
+        (f[r]*Derivative[1][\[Phi]][r]^2)/(4*\[Zeta][r]^2)))/Z[\[Phi][r]]^2 + 
+     (f[r]*Derivative[1][\[Phi]][r]^2*Derivative[2][Z][\[Phi][r]])/
+      (2*Z[\[Phi][r]]*\[Zeta][r]^2)], Subscript[W, 1 -> 2, 1] -> 
+   Function[{r}, -((Sqrt[k^2 - K*n]*Sqrt[Z[\[Phi][r]]]*Derivative[1][a][r])/
+      (S[r]*\[Zeta][r]))], Subscript[W, 2 -> 1, 1] -> 
+   Function[{r}, -((Sqrt[k^2 - K*n]*Sqrt[Z[\[Phi][r]]]*Derivative[1][a][r])/
+      (S[r]*\[Zeta][r]))], Subscript[W, 2, 1] -> 
+   Function[{r}, k^2/S[r]^2 - 
+     n*(K/S[r]^2 + (Derivative[1][f][r]*Derivative[1][S][r])/
+        (S[r]*\[Zeta][r]^2) - (f[r]*Derivative[1][S][r]^2)/
+        (S[r]^2*\[Zeta][r]^2)) + (\[Eta]*f[r]*Derivative[1][\[Phi]][r]^2)/
+      \[Zeta][r]^2], Subscript[W, 0, 0] -> 
+   Function[{r}, k^2/S[r]^2 + 
+     ((\[ScriptCapitalD][r]^2*Derivative[1][a][r]^2*
+         Derivative[1][Z][\[Phi][r]]^2)/(2*\[Eta]*Z[\[Phi][r]]) + 
+       S[r]*\[ScriptCapitalD][r]*Derivative[1][a][r]^2*
+        (-(S[r]*Derivative[1][f][r]) + 2*f[r]*Derivative[1][S][r])*
+        Derivative[1][Z][\[Phi][r]]*Derivative[1][\[Phi]][r] + 
+       4*k^2*\[Eta]*f[r]*S[r]^2*Z[\[Phi][r]]*\[Zeta][r]^2*
+        Derivative[1][a][r]^2*Derivative[1][\[Phi]][r]^2 + 
+       (32*k^2*(k^2 + K - K*n)*\[Eta]^2*f[r]*\[Zeta][r]^4*
+          Derivative[1][\[Phi]][r]^2 + 16*(-2 + n)*\[Eta]^2*f[r]^2*
+          \[ScriptCapitalD][r]*Derivative[1][S][r]^2*Derivative[1][\[Phi]][r]^
+           2 - 32*n*\[Eta]^2*f[r]^3*Derivative[1][S][r]^4*
+          Derivative[1][\[Phi]][r]^2 + 8*\[Eta]^3*f[r]*S[r]^4*
+          Derivative[1][f][r]^2*Derivative[1][\[Phi]][r]^4 - 
+         32*\[Eta]^3*f[r]^2*S[r]^3*Derivative[1][f][r]*Derivative[1][S][r]*
+          Derivative[1][\[Phi]][r]^4 + 8*\[Eta]*f[r]*S[r]*Derivative[1][S][r]*
+          Derivative[1][\[Phi]][r]*(-2*\[ScriptCapitalD][r]*\[Zeta][r]^2*
+            Derivative[1][V][\[Phi][r]] + \[Eta]*Derivative[1][f][r]*
+            (-((-4 + n)*\[ScriptCapitalD][r]) + 4*n*f[r]*Derivative[1][S][
+                r]^2)*Derivative[1][\[Phi]][r]) + 8*\[Eta]*S[r]^2*
+          Derivative[1][\[Phi]][r]*(\[ScriptCapitalD][r]*\[Zeta][r]^2*
+            Derivative[1][f][r]*Derivative[1][V][\[Phi][r]] - 
+           \[Eta]*Derivative[1][f][r]^2*(\[ScriptCapitalD][r] + 
+             n*f[r]*Derivative[1][S][r]^2)*Derivative[1][\[Phi]][r] + 
+           4*\[Eta]^2*f[r]^3*Derivative[1][S][r]^2*Derivative[1][\[Phi]][r]^
+             3) + \[ScriptCapitalD][r]^2*(2*\[Zeta][r]^2*Derivative[2][V][
+             \[Phi][r]] - Derivative[1][a][r]^2*Derivative[2][Z][\[Phi][r]]))/
+        (4*\[Eta]))/(\[ScriptCapitalD][r]^2*\[Zeta][r]^2)], 
+  Subscript[W, 0 -> 1, 0] -> Function[{r}, 
+    (k*Sqrt[Z[\[Phi][r]]]*Derivative[1][a][r]*
+      (2*S[r]*\[ScriptCapitalD][r]*\[Zeta][r]^2*Derivative[1][V][\[Phi][r]] - 
+       S[r]*\[ScriptCapitalD][r]*Derivative[1][a][r]^2*
+        Derivative[1][Z][\[Phi][r]] - 4*n*\[Eta]*f[r]*S[r]^2*Z[\[Phi][r]]*
+        Derivative[1][a][r]^2*Derivative[1][S][r]*Derivative[1][\[Phi]][r] + 
+       4*\[Eta]*f[r]*Derivative[1][S][r]*(2*(k^2*(1 - 2*n) + K*(-1 + n)*n)*
+          \[Zeta][r]^2 + n^2*Derivative[1][S][r]*
+          (-(S[r]*Derivative[1][f][r]) + 2*f[r]*Derivative[1][S][r]))*
+        Derivative[1][\[Phi]][r] + 4*\[Eta]^2*f[r]*S[r]^2*
+        (S[r]*Derivative[1][f][r] - 2*f[r]*Derivative[1][S][r])*
+        Derivative[1][\[Phi]][r]^3 - (\[ScriptCapitalD][r]*
+         Derivative[1][Z][\[Phi][r]]*(\[ScriptCapitalD][r] + 
+          2*\[Eta]*f[r]*S[r]^2*Derivative[1][\[Phi]][r]^2))/
+        (S[r]*Z[\[Phi][r]])))/(Sqrt[2]*Sqrt[\[Eta]]*\[ScriptCapitalD][r]^2*
+      \[Zeta][r])], Subscript[W, 0 -> 2, 0] -> 
+   Function[{r}, -((k*Sqrt[-1 + n]*Sqrt[k^2 - K*n]*
+       (\[ScriptCapitalD][r]*(2*\[Zeta][r]^2*Derivative[1][V][\[Phi][r]] - 
+          Derivative[1][a][r]^2*Derivative[1][Z][\[Phi][r]]) + 
+        (4*\[Eta]*f[r]*Derivative[1][\[Phi]][r]*
+          (-(n*Derivative[1][S][r]*(2*(k^2 + K - K*n)*\[Zeta][r]^2 + 
+              S[r]^2*Z[\[Phi][r]]*Derivative[1][a][r]^2 + 
+              S[r]*Derivative[1][f][r]*Derivative[1][S][r] - 
+              2*f[r]*Derivative[1][S][r]^2)) + \[Eta]*S[r]^2*
+            (S[r]*Derivative[1][f][r] - 2*f[r]*Derivative[1][S][r])*
+            Derivative[1][\[Phi]][r]^2))/S[r]))/(Sqrt[n]*Sqrt[\[Eta]]*
+       \[ScriptCapitalD][r]^2))], Subscript[W, 1 -> 0, 0] -> 
+   Function[{r}, (k*Sqrt[Z[\[Phi][r]]]*Derivative[1][a][r]*
+      (2*S[r]*\[ScriptCapitalD][r]*\[Zeta][r]^2*Derivative[1][V][\[Phi][r]] - 
+       S[r]*\[ScriptCapitalD][r]*Derivative[1][a][r]^2*
+        Derivative[1][Z][\[Phi][r]] - 4*n*\[Eta]*f[r]*S[r]^2*Z[\[Phi][r]]*
+        Derivative[1][a][r]^2*Derivative[1][S][r]*Derivative[1][\[Phi]][r] + 
+       4*\[Eta]*f[r]*Derivative[1][S][r]*(2*(k^2*(1 - 2*n) + K*(-1 + n)*n)*
+          \[Zeta][r]^2 + n^2*Derivative[1][S][r]*
+          (-(S[r]*Derivative[1][f][r]) + 2*f[r]*Derivative[1][S][r]))*
+        Derivative[1][\[Phi]][r] + 4*\[Eta]^2*f[r]*S[r]^2*
+        (S[r]*Derivative[1][f][r] - 2*f[r]*Derivative[1][S][r])*
+        Derivative[1][\[Phi]][r]^3 - (\[ScriptCapitalD][r]*
+         Derivative[1][Z][\[Phi][r]]*(\[ScriptCapitalD][r] + 
+          2*\[Eta]*f[r]*S[r]^2*Derivative[1][\[Phi]][r]^2))/
+        (S[r]*Z[\[Phi][r]])))/(Sqrt[2]*Sqrt[\[Eta]]*\[ScriptCapitalD][r]^2*
+      \[Zeta][r])], Subscript[W, 1, 0] -> 
+   Function[{r}, k^2/S[r]^2 + (2*n^2*f[r]*S[r]^2*Z[\[Phi][r]]^2*
+       Derivative[1][a][r]^4*Derivative[1][S][r]^2)/(\[ScriptCapitalD][r]^2*
+       \[Zeta][r]^2) + (2*n*f[r]*S[r]*Derivative[1][a][r]^2*
+       Derivative[1][S][r]*Derivative[1][Z][\[Phi][r]]*
+       Derivative[1][\[Phi]][r])/(\[ScriptCapitalD][r]*\[Zeta][r]^2) + 
+     (3*f[r]*Derivative[1][Z][\[Phi][r]]^2*Derivative[1][\[Phi]][r]^2)/
+      (4*Z[\[Phi][r]]^2*\[Zeta][r]^2) - 
+     ((-1 + n)*(n*Derivative[1][f][r]*Derivative[1][S][r] - 
+        \[Eta]*f[r]*S[r]*Derivative[1][\[Phi]][r]^2))/(n*S[r]*\[Zeta][r]^2) + 
+     (Z[\[Phi][r]]*Derivative[1][a][r]^2*(4*k^4*\[Zeta][r]^4 - 
+        n^2*Derivative[1][S][r]^2*(S[r]*Derivative[1][f][r] - 
+          2*f[r]*Derivative[1][S][r])*(S[r]*Derivative[1][f][r] - 
+          2*(-1 + n)*f[r]*Derivative[1][S][r]) + 4*f[r]*\[Zeta][r]^2*
+         (n*(-(K*(-1 + n)*n) + k^2*(-3 + 2*n))*Derivative[1][S][r]^2 + 
+          k^2*\[Eta]*S[r]^2*Derivative[1][\[Phi]][r]^2)))/
+      (\[ScriptCapitalD][r]^2*\[Zeta][r]^2) + 
+     ((Derivative[1][a][r]^2*Derivative[1][Z][\[Phi][r]]^2)/
+        (8*\[Eta]*\[Zeta][r]^2) + Derivative[1][Z][\[Phi][r]]*
+        (-1/4*Derivative[1][V][\[Phi][r]]/\[Eta] + 
+         ((-1 + n)*f[r]*Derivative[1][S][r]*Derivative[1][\[Phi]][r])/
+          (S[r]*\[Zeta][r]^2)) - (f[r]*Derivative[1][\[Phi]][r]^2*
+         Derivative[2][Z][\[Phi][r]])/(2*\[Zeta][r]^2))/Z[\[Phi][r]]], 
+  Subscript[W, 1 -> 2, 0] -> Function[{r}, 
+    -((Sqrt[2]*Sqrt[-1 + n]*Sqrt[k^2 - K*n]*Sqrt[Z[\[Phi][r]]]*
+       Derivative[1][a][r]*((4*\[Zeta][r]^2*(k^4*\[Zeta][r]^2 + 
+           n*(k^2*(-2 + n) - K*(-1 + n)*n)*f[r]*Derivative[1][S][r]^2))/
+         S[r] + (n*f[r]*Derivative[1][S][r]*(2*n*Z[\[Phi][r]]*
+            Derivative[1][f][r]*Derivative[1][S][r]^2 + \[ScriptCapitalD][r]*
+            Derivative[1][Z][\[Phi][r]]*Derivative[1][\[Phi]][r]))/
+         Z[\[Phi][r]] + S[r]*(n^2*(2*f[r]*Z[\[Phi][r]]*Derivative[1][a][r]^
+              2 - Derivative[1][f][r]^2)*Derivative[1][S][r]^2 + 
+          4*k^2*\[Eta]*f[r]*\[Zeta][r]^2*Derivative[1][\[Phi]][r]^2)))/
+      (Sqrt[n]*\[ScriptCapitalD][r]^2*\[Zeta][r]))], 
+  Subscript[W, 2 -> 0, 0] -> Function[{r}, 
+    -((k*Sqrt[-1 + n]*Sqrt[k^2 - K*n]*(\[ScriptCapitalD][r]*
+         (2*\[Zeta][r]^2*Derivative[1][V][\[Phi][r]] - Derivative[1][a][r]^2*
+           Derivative[1][Z][\[Phi][r]]) + 
+        (4*\[Eta]*f[r]*Derivative[1][\[Phi]][r]*
+          (-(n*Derivative[1][S][r]*(2*(k^2 + K - K*n)*\[Zeta][r]^2 + 
+              S[r]^2*Z[\[Phi][r]]*Derivative[1][a][r]^2 + 
+              S[r]*Derivative[1][f][r]*Derivative[1][S][r] - 
+              2*f[r]*Derivative[1][S][r]^2)) + \[Eta]*S[r]^2*
+            (S[r]*Derivative[1][f][r] - 2*f[r]*Derivative[1][S][r])*
+            Derivative[1][\[Phi]][r]^2))/S[r]))/(Sqrt[n]*Sqrt[\[Eta]]*
+       \[ScriptCapitalD][r]^2))], Subscript[W, 2 -> 1, 0] -> 
+   Function[{r}, -((Sqrt[2]*Sqrt[-1 + n]*Sqrt[k^2 - K*n]*Sqrt[Z[\[Phi][r]]]*
+       Derivative[1][a][r]*((4*\[Zeta][r]^2*(k^4*\[Zeta][r]^2 + 
+           n*(k^2*(-2 + n) - K*(-1 + n)*n)*f[r]*Derivative[1][S][r]^2))/
+         S[r] + (n*f[r]*Derivative[1][S][r]*(2*n*Z[\[Phi][r]]*
+            Derivative[1][f][r]*Derivative[1][S][r]^2 + \[ScriptCapitalD][r]*
+            Derivative[1][Z][\[Phi][r]]*Derivative[1][\[Phi]][r]))/
+         Z[\[Phi][r]] + S[r]*(n^2*(2*f[r]*Z[\[Phi][r]]*Derivative[1][a][r]^
+              2 - Derivative[1][f][r]^2)*Derivative[1][S][r]^2 + 
+          4*k^2*\[Eta]*f[r]*\[Zeta][r]^2*Derivative[1][\[Phi]][r]^2)))/
+      (Sqrt[n]*\[ScriptCapitalD][r]^2*\[Zeta][r]))], 
+  Subscript[W, 2, 0] -> Function[{r}, k^2/S[r]^2 + 
+     ((-1 + n)*(4*n*(k^2 - K*n)*f[r]*Z[\[Phi][r]]*Derivative[1][a][r]^2*
+         Derivative[1][S][r]^2 + (2*(-4*k^4*K*n*\[Zeta][r]^4 - 
+           n^2*Derivative[1][S][r]^2*(-(S[r]*Derivative[1][f][r]) + 
+             2*f[r]*Derivative[1][S][r])*((-2*k^2 + K*n)*S[r]*
+              Derivative[1][f][r] - 2*(k^2*(-2 + n) - K*(-1 + n)*n)*f[r]*
+              Derivative[1][S][r]) + 4*\[Zeta][r]^2*
+            (n*Derivative[1][S][r]*(-(k^4*S[r]*Derivative[1][f][r]) + 
+               (k^4 - k^2*K*(-2 + n)*n + K^2*(-1 + n)*n^2)*f[r]*
+                Derivative[1][S][r]) + k^2*(k^2 - K*n)*\[Eta]*f[r]*S[r]^2*
+              Derivative[1][\[Phi]][r]^2)))/(n*S[r]^2)))/
+      \[ScriptCapitalD][r]^2], \[ScriptCapitalD] -> 
+   Function[{r}, 2*k^2*\[Zeta][r]^2 + 
+     n*(S[r]*Derivative[1][f][r]*Derivative[1][S][r] - 
+       2*f[r]*Derivative[1][S][r]^2)]}, 
+ {Derivative[2][\[Phi]][r] -> 
+   (-((n*Derivative[1][S][r])/S[r]) + Derivative[1][\[Zeta]][r]/\[Zeta][r])*
+     Derivative[1][\[Phi]][r] - 
+    (-2*\[Zeta][r]^2*Derivative[1][V][\[Phi][r]] + Derivative[1][a][r]^2*
+       Derivative[1][Z][\[Phi][r]] + 4*\[Eta]*Derivative[1][f][r]*
+       Derivative[1][\[Phi]][r])/(4*\[Eta]*f[r]), 
+  Derivative[2][a][r] -> Derivative[1][a][r]*
+    (-((n*Derivative[1][S][r])/S[r]) + Derivative[1][\[Zeta]][r]/\[Zeta][r] - 
+     (Derivative[1][Z][\[Phi][r]]*Derivative[1][\[Phi]][r])/Z[\[Phi][r]]), 
+  Derivative[2][S][r] -> (Derivative[1][S][r]*Derivative[1][\[Zeta]][r])/
+     \[Zeta][r] - (\[Eta]*S[r]*Derivative[1][\[Phi]][r]^2)/n, 
+  \[CapitalLambda] -> (2*(K*(-1 + n)*n - S[r]^2*V[\[Phi][r]])*\[Zeta][r]^2 - 
+     2*n*S[r]*Derivative[1][f][r]*Derivative[1][S][r] - 
+     2*(-1 + n)*n*f[r]*Derivative[1][S][r]^2 + 
+     S[r]^2*(-(Z[\[Phi][r]]*Derivative[1][a][r]^2) + 
+       2*\[Eta]*f[r]*Derivative[1][\[Phi]][r]^2))/(2*S[r]^2*\[Zeta][r]^2), 
+  Derivative[2][f][r] -> Z[\[Phi][r]]*Derivative[1][a][r]^2 - 
+    ((-2 + n)*Derivative[1][f][r]*Derivative[1][S][r])/S[r] - 
+    (2*(-1 + n)*(K*\[Zeta][r]^2 - f[r]*Derivative[1][S][r]^2))/S[r]^2 + 
+    (Derivative[1][f][r]*Derivative[1][\[Zeta]][r])/\[Zeta][r] - 
+    (2*\[Eta]*f[r]*Derivative[1][\[Phi]][r]^2)/n}}

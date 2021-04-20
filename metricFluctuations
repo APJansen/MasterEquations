@@ -1,0 +1,473 @@
+{1, {{P[u]*Subscript[h, tt][t, r], (P[u]*Subscript[h, tr][t, r])/2, 
+   Subscript[h, tx][t, r]*Derivative[1][P][u], PV[u]*Subscript[h, tz][t, r]}, 
+  {(P[u]*Subscript[h, tr][t, r])/2, P[u]*Subscript[h, rr][t, r], 
+   Subscript[h, rx][t, r]*Derivative[1][P][u], PV[u]*Subscript[h, rz][t, r]}, 
+  {Subscript[h, tx][t, r]*Derivative[1][P][u], Subscript[h, rx][t, r]*
+    Derivative[1][P][u], (P[u]*SubPlus[h][t, r])/(2*(1 - K*u^2)) + 
+    (SubMinus[h][t, r]*(k^2*P[u] - 2*K*u*Derivative[1][P][u]))/
+     (-2 + 2*K*u^2), Subscript[h, xz][t, r]*((-2*K*u*PV[u])/(-1 + K*u^2) + 
+     Derivative[1][PV][u])}, {PV[u]*Subscript[h, tz][t, r], 
+   PV[u]*Subscript[h, rz][t, r], Subscript[h, xz][t, r]*
+    ((-2*K*u*PV[u])/(-1 + K*u^2) + Derivative[1][PV][u]), 
+   ((1 - K*u^2)*P[u]*SubPlus[h][t, r])/2 + 
+    ((-1 + K*u^2)*SubMinus[h][t, r]*(-(k^2*P[u]) + 
+       2*K*u*Derivative[1][P][u]))/2}}, 
+ {{P[u]*Subscript[h, tt][t, r], (P[u]*Subscript[h, tr][t, r])/2, 
+   Subscript[h, tx][t, r]*Derivative[1][P][u], 0, 
+   PV[u]*Subscript[h, tz][t, r]}, {(P[u]*Subscript[h, tr][t, r])/2, 
+   P[u]*Subscript[h, rr][t, r], Subscript[h, rx][t, r]*Derivative[1][P][u], 
+   0, PV[u]*Subscript[h, rz][t, r]}, 
+  {Subscript[h, tx][t, r]*Derivative[1][P][u], Subscript[h, rx][t, r]*
+    Derivative[1][P][u], (P[u]*SubPlus[h][t, r])/(3*(1 - K*u^2)) + 
+    (2*SubMinus[h][t, r]*(k^2*P[u] - 3*K*u*Derivative[1][P][u]))/
+     (-3 + 3*K*u^2), 0, Subscript[h, xz][t, r]*((-2*K*u*PV[u])/(-1 + K*u^2) + 
+     Derivative[1][PV][u])}, 
+  {0, 0, 0, ((1 - K*u^2)*P[u]*SubPlus[h][t, r])/
+     (3*(1 - K*Subscript[\[Theta], 2]^2)) + 
+    ((-1 + K*u^2)*SubMinus[h][t, r]*(-(k^2*P[u]) + 
+       3*K*u*Derivative[1][P][u]))/(3 - 3*K*Subscript[\[Theta], 2]^2), 
+   (2*K*PV[u]*Subscript[\[Theta], 2]*Subscript[h, xz][t, r] + 
+     PT[u]*Subscript[h, yz][t, r])/(1 - K*Subscript[\[Theta], 2]^2)}, 
+  {PV[u]*Subscript[h, tz][t, r], PV[u]*Subscript[h, rz][t, r], 
+   Subscript[h, xz][t, r]*((-2*K*u*PV[u])/(-1 + K*u^2) + 
+     Derivative[1][PV][u]), 
+   (2*K*PV[u]*Subscript[\[Theta], 2]*Subscript[h, xz][t, r] + 
+     PT[u]*Subscript[h, yz][t, r])/(1 - K*Subscript[\[Theta], 2]^2), 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*SubPlus[h][t, r])/3 + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*SubMinus[h][t, r]*
+      (k^2*P[u] - 3*K*u*Derivative[1][P][u]))/3}}, 
+ {{P[u]*Subscript[h, tt][t, r], (P[u]*Subscript[h, tr][t, r])/2, 
+   Subscript[h, tx][t, r]*Derivative[1][P][u], 0, 0, 
+   PV[u]*Subscript[h, tz][t, r]}, {(P[u]*Subscript[h, tr][t, r])/2, 
+   P[u]*Subscript[h, rr][t, r], Subscript[h, rx][t, r]*Derivative[1][P][u], 
+   0, 0, PV[u]*Subscript[h, rz][t, r]}, 
+  {Subscript[h, tx][t, r]*Derivative[1][P][u], Subscript[h, rx][t, r]*
+    Derivative[1][P][u], (P[u]*SubPlus[h][t, r])/(4*(1 - K*u^2)) + 
+    (3*SubMinus[h][t, r]*(k^2*P[u] - 4*K*u*Derivative[1][P][u]))/
+     (-4 + 4*K*u^2), 0, 0, Subscript[h, xz][t, r]*
+    ((-2*K*u*PV[u])/(-1 + K*u^2) + Derivative[1][PV][u])}, 
+  {0, 0, 0, ((1 - K*u^2)*P[u]*SubPlus[h][t, r])/
+     (4*(1 - K*Subscript[\[Theta], 2]^2)) + 
+    ((-1 + K*u^2)*SubMinus[h][t, r]*(-(k^2*P[u]) + 
+       4*K*u*Derivative[1][P][u]))/(4 - 4*K*Subscript[\[Theta], 2]^2), 0, 
+   (-2*K*PV[u]*Subscript[\[Theta], 2]*Subscript[h, xz][t, r])/
+     (-1 + K*Subscript[\[Theta], 2]^2) + 
+    (PT[u]*(1 - K*Subscript[\[Theta], 3]^2)*Subscript[h, yz][t, r])/
+     (1 - K*Subscript[\[Theta], 2]^2)^(3/2)}, 
+  {0, 0, 0, 0, ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      SubPlus[h][t, r])/(4*(1 - K*Subscript[\[Theta], 3]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*SubMinus[h][t, r]*
+      (-(k^2*P[u]) + 4*K*u*Derivative[1][P][u]))/
+     (-4 + 4*K*Subscript[\[Theta], 3]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 3]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 3]^2)}, {PV[u]*Subscript[h, tz][t, r], 
+   PV[u]*Subscript[h, rz][t, r], Subscript[h, xz][t, r]*
+    ((-2*K*u*PV[u])/(-1 + K*u^2) + Derivative[1][PV][u]), 
+   (-2*K*PV[u]*Subscript[\[Theta], 2]*Subscript[h, xz][t, r])/
+     (-1 + K*Subscript[\[Theta], 2]^2) + 
+    (PT[u]*(1 - K*Subscript[\[Theta], 3]^2)*Subscript[h, yz][t, r])/
+     (1 - K*Subscript[\[Theta], 2]^2)^(3/2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 3]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 3]^2), 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*SubPlus[h][t, r])/4 + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*SubMinus[h][t, r]*
+      (-(k^2*P[u]) + 4*K*u*Derivative[1][P][u]))/4}}, 
+ {{P[u]*Subscript[h, tt][t, r], (P[u]*Subscript[h, tr][t, r])/2, 
+   Subscript[h, tx][t, r]*Derivative[1][P][u], 0, 0, 0, 
+   PV[u]*Subscript[h, tz][t, r]}, {(P[u]*Subscript[h, tr][t, r])/2, 
+   P[u]*Subscript[h, rr][t, r], Subscript[h, rx][t, r]*Derivative[1][P][u], 
+   0, 0, 0, PV[u]*Subscript[h, rz][t, r]}, 
+  {Subscript[h, tx][t, r]*Derivative[1][P][u], Subscript[h, rx][t, r]*
+    Derivative[1][P][u], (P[u]*SubPlus[h][t, r])/(5*(1 - K*u^2)) + 
+    (4*SubMinus[h][t, r]*(k^2*P[u] - 5*K*u*Derivative[1][P][u]))/
+     (-5 + 5*K*u^2), 0, 0, 0, Subscript[h, xz][t, r]*
+    ((-2*K*u*PV[u])/(-1 + K*u^2) + Derivative[1][PV][u])}, 
+  {0, 0, 0, ((1 - K*u^2)*P[u]*SubPlus[h][t, r])/
+     (5*(1 - K*Subscript[\[Theta], 2]^2)) + 
+    ((-1 + K*u^2)*SubMinus[h][t, r]*(-(k^2*P[u]) + 
+       5*K*u*Derivative[1][P][u]))/(5 - 5*K*Subscript[\[Theta], 2]^2), 0, 0, 
+   (-2*K*PV[u]*Subscript[\[Theta], 2]*(-1 + K*Subscript[\[Theta], 2]^2)*
+      Subscript[h, xz][t, r] + PT[u]*(-1 + K*Subscript[\[Theta], 3]^2)*
+      (-1 + K*Subscript[\[Theta], 4]^2)*Subscript[h, yz][t, r])/
+    (-1 + K*Subscript[\[Theta], 2]^2)^2}, 
+  {0, 0, 0, 0, ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      SubPlus[h][t, r])/(5*(1 - K*Subscript[\[Theta], 3]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*SubMinus[h][t, r]*
+      (-(k^2*P[u]) + 5*K*u*Derivative[1][P][u]))/
+     (-5 + 5*K*Subscript[\[Theta], 3]^2), 0, 
+   (-2*K*PV[u]*Subscript[\[Theta], 3]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 3]^2)}, {0, 0, 0, 0, 0, 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*SubPlus[h][t, r])/
+     (5*(1 - K*Subscript[\[Theta], 4]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*SubMinus[h][t, r]*
+      (-(k^2*P[u]) + 5*K*u*Derivative[1][P][u]))/
+     (5 - 5*K*Subscript[\[Theta], 4]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 4]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 4]^2)}, {PV[u]*Subscript[h, tz][t, r], 
+   PV[u]*Subscript[h, rz][t, r], Subscript[h, xz][t, r]*
+    ((-2*K*u*PV[u])/(-1 + K*u^2) + Derivative[1][PV][u]), 
+   (-2*K*PV[u]*Subscript[\[Theta], 2]*(-1 + K*Subscript[\[Theta], 2]^2)*
+      Subscript[h, xz][t, r] + PT[u]*(-1 + K*Subscript[\[Theta], 3]^2)*
+      (-1 + K*Subscript[\[Theta], 4]^2)*Subscript[h, yz][t, r])/
+    (-1 + K*Subscript[\[Theta], 2]^2)^2, 
+   (-2*K*PV[u]*Subscript[\[Theta], 3]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 3]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 4]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 4]^2), 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*(1 - K*Subscript[\[Theta], 4]^2)*
+      SubPlus[h][t, r])/5 - ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*(-1 + K*Subscript[\[Theta], 4]^2)*
+      SubMinus[h][t, r]*(-(k^2*P[u]) + 5*K*u*Derivative[1][P][u]))/5}}, 
+ {{P[u]*Subscript[h, tt][t, r], (P[u]*Subscript[h, tr][t, r])/2, 
+   Subscript[h, tx][t, r]*Derivative[1][P][u], 0, 0, 0, 0, 
+   PV[u]*Subscript[h, tz][t, r]}, {(P[u]*Subscript[h, tr][t, r])/2, 
+   P[u]*Subscript[h, rr][t, r], Subscript[h, rx][t, r]*Derivative[1][P][u], 
+   0, 0, 0, 0, PV[u]*Subscript[h, rz][t, r]}, 
+  {Subscript[h, tx][t, r]*Derivative[1][P][u], Subscript[h, rx][t, r]*
+    Derivative[1][P][u], (P[u]*SubPlus[h][t, r])/(6*(1 - K*u^2)) + 
+    (5*SubMinus[h][t, r]*(k^2*P[u] - 6*K*u*Derivative[1][P][u]))/
+     (-6 + 6*K*u^2), 0, 0, 0, 0, Subscript[h, xz][t, r]*
+    ((-2*K*u*PV[u])/(-1 + K*u^2) + Derivative[1][PV][u])}, 
+  {0, 0, 0, ((1 - K*u^2)*P[u]*SubPlus[h][t, r])/
+     (6*(1 - K*Subscript[\[Theta], 2]^2)) + 
+    ((-1 + K*u^2)*SubMinus[h][t, r]*(-(k^2*P[u]) + 
+       6*K*u*Derivative[1][P][u]))/(6 - 6*K*Subscript[\[Theta], 2]^2), 0, 0, 
+   0, (-2*K*PV[u]*Subscript[\[Theta], 2]*Subscript[h, xz][t, r])/
+     (-1 + K*Subscript[\[Theta], 2]^2) - 
+    (PT[u]*(-1 + K*Subscript[\[Theta], 3]^2)*
+      (-1 + K*Subscript[\[Theta], 4]^2)*(-1 + K*Subscript[\[Theta], 5]^2)*
+      Subscript[h, yz][t, r])/(1 - K*Subscript[\[Theta], 2]^2)^(5/2)}, 
+  {0, 0, 0, 0, ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      SubPlus[h][t, r])/(6*(1 - K*Subscript[\[Theta], 3]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*SubMinus[h][t, r]*
+      (-(k^2*P[u]) + 6*K*u*Derivative[1][P][u]))/
+     (-6 + 6*K*Subscript[\[Theta], 3]^2), 0, 0, 
+   (-2*K*PV[u]*Subscript[\[Theta], 3]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 3]^2)}, {0, 0, 0, 0, 0, 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*SubPlus[h][t, r])/
+     (6*(1 - K*Subscript[\[Theta], 4]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*SubMinus[h][t, r]*
+      (-(k^2*P[u]) + 6*K*u*Derivative[1][P][u]))/
+     (6 - 6*K*Subscript[\[Theta], 4]^2), 0, 
+   (-2*K*PV[u]*Subscript[\[Theta], 4]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 4]^2)}, {0, 0, 0, 0, 0, 0, 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*(1 - K*Subscript[\[Theta], 4]^2)*
+      SubPlus[h][t, r])/(6*(1 - K*Subscript[\[Theta], 5]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*(-1 + K*Subscript[\[Theta], 4]^2)*
+      SubMinus[h][t, r]*(-(k^2*P[u]) + 6*K*u*Derivative[1][P][u]))/
+     (-6 + 6*K*Subscript[\[Theta], 5]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 5]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 5]^2)}, {PV[u]*Subscript[h, tz][t, r], 
+   PV[u]*Subscript[h, rz][t, r], Subscript[h, xz][t, r]*
+    ((-2*K*u*PV[u])/(-1 + K*u^2) + Derivative[1][PV][u]), 
+   (-2*K*PV[u]*Subscript[\[Theta], 2]*Subscript[h, xz][t, r])/
+     (-1 + K*Subscript[\[Theta], 2]^2) - 
+    (PT[u]*(-1 + K*Subscript[\[Theta], 3]^2)*
+      (-1 + K*Subscript[\[Theta], 4]^2)*(-1 + K*Subscript[\[Theta], 5]^2)*
+      Subscript[h, yz][t, r])/(1 - K*Subscript[\[Theta], 2]^2)^(5/2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 3]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 3]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 4]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 4]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 5]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 5]^2), 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*(1 - K*Subscript[\[Theta], 4]^2)*
+      (1 - K*Subscript[\[Theta], 5]^2)*SubPlus[h][t, r])/6 + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*(-1 + K*Subscript[\[Theta], 4]^2)*
+      (-1 + K*Subscript[\[Theta], 5]^2)*SubMinus[h][t, r]*
+      (-(k^2*P[u]) + 6*K*u*Derivative[1][P][u]))/6}}, 
+ {{P[u]*Subscript[h, tt][t, r], (P[u]*Subscript[h, tr][t, r])/2, 
+   Subscript[h, tx][t, r]*Derivative[1][P][u], 0, 0, 0, 0, 0, 
+   PV[u]*Subscript[h, tz][t, r]}, {(P[u]*Subscript[h, tr][t, r])/2, 
+   P[u]*Subscript[h, rr][t, r], Subscript[h, rx][t, r]*Derivative[1][P][u], 
+   0, 0, 0, 0, 0, PV[u]*Subscript[h, rz][t, r]}, 
+  {Subscript[h, tx][t, r]*Derivative[1][P][u], Subscript[h, rx][t, r]*
+    Derivative[1][P][u], (P[u]*SubPlus[h][t, r])/(7*(1 - K*u^2)) + 
+    (6*SubMinus[h][t, r]*(k^2*P[u] - 7*K*u*Derivative[1][P][u]))/
+     (-7 + 7*K*u^2), 0, 0, 0, 0, 0, Subscript[h, xz][t, r]*
+    ((-2*K*u*PV[u])/(-1 + K*u^2) + Derivative[1][PV][u])}, 
+  {0, 0, 0, ((1 - K*u^2)*P[u]*SubPlus[h][t, r])/
+     (7*(1 - K*Subscript[\[Theta], 2]^2)) + 
+    ((-1 + K*u^2)*SubMinus[h][t, r]*(-(k^2*P[u]) + 
+       7*K*u*Derivative[1][P][u]))/(7 - 7*K*Subscript[\[Theta], 2]^2), 0, 0, 
+   0, 0, (-2*K*PV[u]*Subscript[\[Theta], 2]*Subscript[h, xz][t, r])/
+     (-1 + K*Subscript[\[Theta], 2]^2) - 
+    (PT[u]*(-1 + K*Subscript[\[Theta], 3]^2)*
+      (-1 + K*Subscript[\[Theta], 4]^2)*(-1 + K*Subscript[\[Theta], 5]^2)*
+      (-1 + K*Subscript[\[Theta], 6]^2)*Subscript[h, yz][t, r])/
+     (-1 + K*Subscript[\[Theta], 2]^2)^3}, 
+  {0, 0, 0, 0, ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      SubPlus[h][t, r])/(7*(1 - K*Subscript[\[Theta], 3]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*SubMinus[h][t, r]*
+      (-(k^2*P[u]) + 7*K*u*Derivative[1][P][u]))/
+     (-7 + 7*K*Subscript[\[Theta], 3]^2), 0, 0, 0, 
+   (-2*K*PV[u]*Subscript[\[Theta], 3]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 3]^2)}, {0, 0, 0, 0, 0, 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*SubPlus[h][t, r])/
+     (7*(1 - K*Subscript[\[Theta], 4]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*SubMinus[h][t, r]*
+      (-(k^2*P[u]) + 7*K*u*Derivative[1][P][u]))/
+     (7 - 7*K*Subscript[\[Theta], 4]^2), 0, 0, 
+   (-2*K*PV[u]*Subscript[\[Theta], 4]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 4]^2)}, {0, 0, 0, 0, 0, 0, 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*(1 - K*Subscript[\[Theta], 4]^2)*
+      SubPlus[h][t, r])/(7*(1 - K*Subscript[\[Theta], 5]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*(-1 + K*Subscript[\[Theta], 4]^2)*
+      SubMinus[h][t, r]*(-(k^2*P[u]) + 7*K*u*Derivative[1][P][u]))/
+     (-7 + 7*K*Subscript[\[Theta], 5]^2), 0, 
+   (-2*K*PV[u]*Subscript[\[Theta], 5]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 5]^2)}, {0, 0, 0, 0, 0, 0, 0, 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*(1 - K*Subscript[\[Theta], 4]^2)*
+      (1 - K*Subscript[\[Theta], 5]^2)*SubPlus[h][t, r])/
+     (7*(1 - K*Subscript[\[Theta], 6]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*(-1 + K*Subscript[\[Theta], 4]^2)*
+      (-1 + K*Subscript[\[Theta], 5]^2)*SubMinus[h][t, r]*
+      (-(k^2*P[u]) + 7*K*u*Derivative[1][P][u]))/
+     (7 - 7*K*Subscript[\[Theta], 6]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 6]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 6]^2)}, {PV[u]*Subscript[h, tz][t, r], 
+   PV[u]*Subscript[h, rz][t, r], Subscript[h, xz][t, r]*
+    ((-2*K*u*PV[u])/(-1 + K*u^2) + Derivative[1][PV][u]), 
+   (-2*K*PV[u]*Subscript[\[Theta], 2]*Subscript[h, xz][t, r])/
+     (-1 + K*Subscript[\[Theta], 2]^2) - 
+    (PT[u]*(-1 + K*Subscript[\[Theta], 3]^2)*
+      (-1 + K*Subscript[\[Theta], 4]^2)*(-1 + K*Subscript[\[Theta], 5]^2)*
+      (-1 + K*Subscript[\[Theta], 6]^2)*Subscript[h, yz][t, r])/
+     (-1 + K*Subscript[\[Theta], 2]^2)^3, 
+   (-2*K*PV[u]*Subscript[\[Theta], 3]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 3]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 4]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 4]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 5]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 5]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 6]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 6]^2), 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*(1 - K*Subscript[\[Theta], 4]^2)*
+      (1 - K*Subscript[\[Theta], 5]^2)*(1 - K*Subscript[\[Theta], 6]^2)*
+      SubPlus[h][t, r])/7 - ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*(-1 + K*Subscript[\[Theta], 4]^2)*
+      (-1 + K*Subscript[\[Theta], 5]^2)*(-1 + K*Subscript[\[Theta], 6]^2)*
+      SubMinus[h][t, r]*(-(k^2*P[u]) + 7*K*u*Derivative[1][P][u]))/7}}, 
+ {{P[u]*Subscript[h, tt][t, r], (P[u]*Subscript[h, tr][t, r])/2, 
+   Subscript[h, tx][t, r]*Derivative[1][P][u], 0, 0, 0, 0, 0, 0, 
+   PV[u]*Subscript[h, tz][t, r]}, {(P[u]*Subscript[h, tr][t, r])/2, 
+   P[u]*Subscript[h, rr][t, r], Subscript[h, rx][t, r]*Derivative[1][P][u], 
+   0, 0, 0, 0, 0, 0, PV[u]*Subscript[h, rz][t, r]}, 
+  {Subscript[h, tx][t, r]*Derivative[1][P][u], Subscript[h, rx][t, r]*
+    Derivative[1][P][u], (P[u]*SubPlus[h][t, r])/(8*(1 - K*u^2)) + 
+    (7*SubMinus[h][t, r]*(k^2*P[u] - 8*K*u*Derivative[1][P][u]))/
+     (-8 + 8*K*u^2), 0, 0, 0, 0, 0, 0, Subscript[h, xz][t, r]*
+    ((-2*K*u*PV[u])/(-1 + K*u^2) + Derivative[1][PV][u])}, 
+  {0, 0, 0, ((1 - K*u^2)*P[u]*SubPlus[h][t, r])/
+     (8*(1 - K*Subscript[\[Theta], 2]^2)) + 
+    ((-1 + K*u^2)*SubMinus[h][t, r]*(-(k^2*P[u]) + 
+       8*K*u*Derivative[1][P][u]))/(8 - 8*K*Subscript[\[Theta], 2]^2), 0, 0, 
+   0, 0, 0, (-2*K*PV[u]*Subscript[\[Theta], 2]*Subscript[h, xz][t, r])/
+     (-1 + K*Subscript[\[Theta], 2]^2) - 
+    (PT[u]*(-1 + K*Subscript[\[Theta], 3]^2)*
+      (-1 + K*Subscript[\[Theta], 4]^2)*(-1 + K*Subscript[\[Theta], 5]^2)*
+      (-1 + K*Subscript[\[Theta], 6]^2)*(-1 + K*Subscript[\[Theta], 7]^2)*
+      Subscript[h, yz][t, r])/(1 - K*Subscript[\[Theta], 2]^2)^(7/2)}, 
+  {0, 0, 0, 0, ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      SubPlus[h][t, r])/(8*(1 - K*Subscript[\[Theta], 3]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*SubMinus[h][t, r]*
+      (-(k^2*P[u]) + 8*K*u*Derivative[1][P][u]))/
+     (-8 + 8*K*Subscript[\[Theta], 3]^2), 0, 0, 0, 0, 
+   (-2*K*PV[u]*Subscript[\[Theta], 3]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 3]^2)}, {0, 0, 0, 0, 0, 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*SubPlus[h][t, r])/
+     (8*(1 - K*Subscript[\[Theta], 4]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*SubMinus[h][t, r]*
+      (-(k^2*P[u]) + 8*K*u*Derivative[1][P][u]))/
+     (8 - 8*K*Subscript[\[Theta], 4]^2), 0, 0, 0, 
+   (-2*K*PV[u]*Subscript[\[Theta], 4]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 4]^2)}, {0, 0, 0, 0, 0, 0, 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*(1 - K*Subscript[\[Theta], 4]^2)*
+      SubPlus[h][t, r])/(8*(1 - K*Subscript[\[Theta], 5]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*(-1 + K*Subscript[\[Theta], 4]^2)*
+      SubMinus[h][t, r]*(-(k^2*P[u]) + 8*K*u*Derivative[1][P][u]))/
+     (-8 + 8*K*Subscript[\[Theta], 5]^2), 0, 0, 
+   (-2*K*PV[u]*Subscript[\[Theta], 5]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 5]^2)}, {0, 0, 0, 0, 0, 0, 0, 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*(1 - K*Subscript[\[Theta], 4]^2)*
+      (1 - K*Subscript[\[Theta], 5]^2)*SubPlus[h][t, r])/
+     (8*(1 - K*Subscript[\[Theta], 6]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*(-1 + K*Subscript[\[Theta], 4]^2)*
+      (-1 + K*Subscript[\[Theta], 5]^2)*SubMinus[h][t, r]*
+      (-(k^2*P[u]) + 8*K*u*Derivative[1][P][u]))/
+     (8 - 8*K*Subscript[\[Theta], 6]^2), 0, 
+   (-2*K*PV[u]*Subscript[\[Theta], 6]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 6]^2)}, {0, 0, 0, 0, 0, 0, 0, 0, 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*(1 - K*Subscript[\[Theta], 4]^2)*
+      (1 - K*Subscript[\[Theta], 5]^2)*(1 - K*Subscript[\[Theta], 6]^2)*
+      SubPlus[h][t, r])/(8*(1 - K*Subscript[\[Theta], 7]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*(-1 + K*Subscript[\[Theta], 4]^2)*
+      (-1 + K*Subscript[\[Theta], 5]^2)*(-1 + K*Subscript[\[Theta], 6]^2)*
+      SubMinus[h][t, r]*(-(k^2*P[u]) + 8*K*u*Derivative[1][P][u]))/
+     (-8 + 8*K*Subscript[\[Theta], 7]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 7]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 7]^2)}, {PV[u]*Subscript[h, tz][t, r], 
+   PV[u]*Subscript[h, rz][t, r], Subscript[h, xz][t, r]*
+    ((-2*K*u*PV[u])/(-1 + K*u^2) + Derivative[1][PV][u]), 
+   (-2*K*PV[u]*Subscript[\[Theta], 2]*Subscript[h, xz][t, r])/
+     (-1 + K*Subscript[\[Theta], 2]^2) - 
+    (PT[u]*(-1 + K*Subscript[\[Theta], 3]^2)*
+      (-1 + K*Subscript[\[Theta], 4]^2)*(-1 + K*Subscript[\[Theta], 5]^2)*
+      (-1 + K*Subscript[\[Theta], 6]^2)*(-1 + K*Subscript[\[Theta], 7]^2)*
+      Subscript[h, yz][t, r])/(1 - K*Subscript[\[Theta], 2]^2)^(7/2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 3]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 3]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 4]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 4]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 5]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 5]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 6]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 6]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 7]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 7]^2), 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*(1 - K*Subscript[\[Theta], 4]^2)*
+      (1 - K*Subscript[\[Theta], 5]^2)*(1 - K*Subscript[\[Theta], 6]^2)*
+      (1 - K*Subscript[\[Theta], 7]^2)*SubPlus[h][t, r])/8 + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*(-1 + K*Subscript[\[Theta], 4]^2)*
+      (-1 + K*Subscript[\[Theta], 5]^2)*(-1 + K*Subscript[\[Theta], 6]^2)*
+      (-1 + K*Subscript[\[Theta], 7]^2)*SubMinus[h][t, r]*
+      (-(k^2*P[u]) + 8*K*u*Derivative[1][P][u]))/8}}, 
+ {{P[u]*Subscript[h, tt][t, r], (P[u]*Subscript[h, tr][t, r])/2, 
+   Subscript[h, tx][t, r]*Derivative[1][P][u], 0, 0, 0, 0, 0, 0, 0, 
+   PV[u]*Subscript[h, tz][t, r]}, {(P[u]*Subscript[h, tr][t, r])/2, 
+   P[u]*Subscript[h, rr][t, r], Subscript[h, rx][t, r]*Derivative[1][P][u], 
+   0, 0, 0, 0, 0, 0, 0, PV[u]*Subscript[h, rz][t, r]}, 
+  {Subscript[h, tx][t, r]*Derivative[1][P][u], Subscript[h, rx][t, r]*
+    Derivative[1][P][u], (P[u]*SubPlus[h][t, r])/(9*(1 - K*u^2)) + 
+    (8*SubMinus[h][t, r]*(k^2*P[u] - 9*K*u*Derivative[1][P][u]))/
+     (-9 + 9*K*u^2), 0, 0, 0, 0, 0, 0, 0, Subscript[h, xz][t, r]*
+    ((-2*K*u*PV[u])/(-1 + K*u^2) + Derivative[1][PV][u])}, 
+  {0, 0, 0, ((1 - K*u^2)*P[u]*SubPlus[h][t, r])/
+     (9*(1 - K*Subscript[\[Theta], 2]^2)) + 
+    ((-1 + K*u^2)*SubMinus[h][t, r]*(-(k^2*P[u]) + 
+       9*K*u*Derivative[1][P][u]))/(9 - 9*K*Subscript[\[Theta], 2]^2), 0, 0, 
+   0, 0, 0, 0, (-2*K*PV[u]*Subscript[\[Theta], 2]*Subscript[h, xz][t, r])/
+     (-1 + K*Subscript[\[Theta], 2]^2) + 
+    (PT[u]*(-1 + K*Subscript[\[Theta], 3]^2)*
+      (-1 + K*Subscript[\[Theta], 4]^2)*(-1 + K*Subscript[\[Theta], 5]^2)*
+      (-1 + K*Subscript[\[Theta], 6]^2)*(-1 + K*Subscript[\[Theta], 7]^2)*
+      (-1 + K*Subscript[\[Theta], 8]^2)*Subscript[h, yz][t, r])/
+     (-1 + K*Subscript[\[Theta], 2]^2)^4}, 
+  {0, 0, 0, 0, ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      SubPlus[h][t, r])/(9*(1 - K*Subscript[\[Theta], 3]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*SubMinus[h][t, r]*
+      (-(k^2*P[u]) + 9*K*u*Derivative[1][P][u]))/
+     (-9 + 9*K*Subscript[\[Theta], 3]^2), 0, 0, 0, 0, 0, 
+   (-2*K*PV[u]*Subscript[\[Theta], 3]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 3]^2)}, {0, 0, 0, 0, 0, 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*SubPlus[h][t, r])/
+     (9*(1 - K*Subscript[\[Theta], 4]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*SubMinus[h][t, r]*
+      (-(k^2*P[u]) + 9*K*u*Derivative[1][P][u]))/
+     (9 - 9*K*Subscript[\[Theta], 4]^2), 0, 0, 0, 0, 
+   (-2*K*PV[u]*Subscript[\[Theta], 4]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 4]^2)}, {0, 0, 0, 0, 0, 0, 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*(1 - K*Subscript[\[Theta], 4]^2)*
+      SubPlus[h][t, r])/(9*(1 - K*Subscript[\[Theta], 5]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*(-1 + K*Subscript[\[Theta], 4]^2)*
+      SubMinus[h][t, r]*(-(k^2*P[u]) + 9*K*u*Derivative[1][P][u]))/
+     (-9 + 9*K*Subscript[\[Theta], 5]^2), 0, 0, 0, 
+   (-2*K*PV[u]*Subscript[\[Theta], 5]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 5]^2)}, {0, 0, 0, 0, 0, 0, 0, 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*(1 - K*Subscript[\[Theta], 4]^2)*
+      (1 - K*Subscript[\[Theta], 5]^2)*SubPlus[h][t, r])/
+     (9*(1 - K*Subscript[\[Theta], 6]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*(-1 + K*Subscript[\[Theta], 4]^2)*
+      (-1 + K*Subscript[\[Theta], 5]^2)*SubMinus[h][t, r]*
+      (-(k^2*P[u]) + 9*K*u*Derivative[1][P][u]))/
+     (9 - 9*K*Subscript[\[Theta], 6]^2), 0, 0, 
+   (-2*K*PV[u]*Subscript[\[Theta], 6]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 6]^2)}, {0, 0, 0, 0, 0, 0, 0, 0, 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*(1 - K*Subscript[\[Theta], 4]^2)*
+      (1 - K*Subscript[\[Theta], 5]^2)*(1 - K*Subscript[\[Theta], 6]^2)*
+      SubPlus[h][t, r])/(9*(1 - K*Subscript[\[Theta], 7]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*(-1 + K*Subscript[\[Theta], 4]^2)*
+      (-1 + K*Subscript[\[Theta], 5]^2)*(-1 + K*Subscript[\[Theta], 6]^2)*
+      SubMinus[h][t, r]*(-(k^2*P[u]) + 9*K*u*Derivative[1][P][u]))/
+     (-9 + 9*K*Subscript[\[Theta], 7]^2), 0, 
+   (-2*K*PV[u]*Subscript[\[Theta], 7]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 7]^2)}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*(1 - K*Subscript[\[Theta], 4]^2)*
+      (1 - K*Subscript[\[Theta], 5]^2)*(1 - K*Subscript[\[Theta], 6]^2)*
+      (1 - K*Subscript[\[Theta], 7]^2)*SubPlus[h][t, r])/
+     (9*(1 - K*Subscript[\[Theta], 8]^2)) + 
+    ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*(-1 + K*Subscript[\[Theta], 4]^2)*
+      (-1 + K*Subscript[\[Theta], 5]^2)*(-1 + K*Subscript[\[Theta], 6]^2)*
+      (-1 + K*Subscript[\[Theta], 7]^2)*SubMinus[h][t, r]*
+      (-(k^2*P[u]) + 9*K*u*Derivative[1][P][u]))/
+     (9 - 9*K*Subscript[\[Theta], 8]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 8]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 8]^2)}, {PV[u]*Subscript[h, tz][t, r], 
+   PV[u]*Subscript[h, rz][t, r], Subscript[h, xz][t, r]*
+    ((-2*K*u*PV[u])/(-1 + K*u^2) + Derivative[1][PV][u]), 
+   (-2*K*PV[u]*Subscript[\[Theta], 2]*Subscript[h, xz][t, r])/
+     (-1 + K*Subscript[\[Theta], 2]^2) + 
+    (PT[u]*(-1 + K*Subscript[\[Theta], 3]^2)*
+      (-1 + K*Subscript[\[Theta], 4]^2)*(-1 + K*Subscript[\[Theta], 5]^2)*
+      (-1 + K*Subscript[\[Theta], 6]^2)*(-1 + K*Subscript[\[Theta], 7]^2)*
+      (-1 + K*Subscript[\[Theta], 8]^2)*Subscript[h, yz][t, r])/
+     (-1 + K*Subscript[\[Theta], 2]^2)^4, 
+   (-2*K*PV[u]*Subscript[\[Theta], 3]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 3]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 4]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 4]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 5]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 5]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 6]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 6]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 7]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 7]^2), 
+   (-2*K*PV[u]*Subscript[\[Theta], 8]*Subscript[h, xz][t, r])/
+    (-1 + K*Subscript[\[Theta], 8]^2), 
+   ((1 - K*u^2)*P[u]*(1 - K*Subscript[\[Theta], 2]^2)*
+      (1 - K*Subscript[\[Theta], 3]^2)*(1 - K*Subscript[\[Theta], 4]^2)*
+      (1 - K*Subscript[\[Theta], 5]^2)*(1 - K*Subscript[\[Theta], 6]^2)*
+      (1 - K*Subscript[\[Theta], 7]^2)*(1 - K*Subscript[\[Theta], 8]^2)*
+      SubPlus[h][t, r])/9 - ((-1 + K*u^2)*(-1 + K*Subscript[\[Theta], 2]^2)*
+      (-1 + K*Subscript[\[Theta], 3]^2)*(-1 + K*Subscript[\[Theta], 4]^2)*
+      (-1 + K*Subscript[\[Theta], 5]^2)*(-1 + K*Subscript[\[Theta], 6]^2)*
+      (-1 + K*Subscript[\[Theta], 7]^2)*(-1 + K*Subscript[\[Theta], 8]^2)*
+      SubMinus[h][t, r]*(-(k^2*P[u]) + 9*K*u*Derivative[1][P][u]))/9}}}
